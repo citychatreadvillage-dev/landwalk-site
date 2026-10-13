@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>農地非農用｜城市行聊・走讀城鄉</title>
+<meta name="description" content="從中科特定區農業區到烏日溪南，看未登記工廠怎麼長進農地，以及《工廠管理輔導法》的納管能不能是解方。">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: 與首頁同一套米白紙底、墨綠標頭與咖啡色底線；左側本頁目錄，右側主題內容，像一本讀書會的主題筆記 */
+
+:root{--paper:#EEEDE5;--paper-2:#E4E2D6;--ink:#24271F;--ink-2:#5B5D50;--rule:#9A6E47;--olive:#ADA987;--sage:#C9C5A8;--forest:#2F3A2B;--on-forest:#EEEDE5;--slate:#3E5566;--pin:#E39A55;--card:#F6F5EF;--line:rgba(36,39,31,.14);
+--serif:"Noto Serif TC","Songti TC","PMingLiU",serif;--sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;color-scheme:light}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:84px}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--rule);outline-offset:3px;border-radius:4px}
+h1,h2,h3,h4{font-family:var(--serif);margin:0;line-height:1.45;text-wrap:balance}p{margin:0}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:20px}
+.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}.brand img{width:42px;height:42px}
+.brand span{font-family:var(--serif);font-weight:600;letter-spacing:.14em;white-space:nowrap}
+.nav{display:flex;gap:6px;flex-wrap:wrap}.nav a{text-decoration:none;font-size:.9rem;padding:6px 10px;border-radius:6px;color:var(--ink-2)}
+.nav a:hover{background:var(--paper-2);color:var(--ink)}
+@media (max-width:560px){.brand span{display:none}.nav a{padding:6px 7px;font-size:.85rem}}
+.head{background:var(--forest);color:var(--on-forest)}
+.head .wrap{padding-block:34px 36px;display:grid;gap:12px}
+.crumb{font-size:.8rem;letter-spacing:.14em;color:var(--sage)}.crumb a{text-decoration:none}.crumb a:hover{text-decoration:underline}
+.head h1{font-size:clamp(1.7rem,4vw,2.6rem);letter-spacing:.14em;font-weight:900}
+.head .sub{font-family:var(--serif);font-size:1.1rem;color:var(--sage);letter-spacing:.06em}
+.head .series{display:inline-block;justify-self:start;font-size:.8rem;letter-spacing:.12em;border:1px solid rgba(238,237,229,.4);border-radius:999px;padding:3px 12px}
+.head .lead{max-width:46em;font-size:.98rem;opacity:.92}
+.hstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:8px;max-width:760px}
+.hstats div{border-top:3px solid var(--pin);padding-top:8px}
+.hstats b{display:block;font-family:var(--serif);font-size:1.6rem;font-weight:900;font-variant-numeric:tabular-nums}
+.hstats span{font-size:.8rem;opacity:.8;line-height:1.5;display:block}
+.layout{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:44px;padding-block:36px 70px}
+.side{position:sticky;top:84px;align-self:start;display:grid;gap:22px}
+.side h2{font-family:var(--sans);font-size:.74rem;letter-spacing:.22em;color:var(--rule);font-weight:700;margin-bottom:6px}
+.side ol,.side ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.side a{display:block;text-decoration:none;font-size:.9rem;padding:4px 0 4px 10px;border-left:3px solid transparent;color:var(--ink-2)}
+.side a:hover{border-left-color:var(--olive);color:var(--ink)}.side a.on{border-left-color:var(--rule);color:var(--ink);font-weight:600}
+main{min-width:0}
+.sec{margin-bottom:54px}
+.sec>h2{display:flex;align-items:baseline;gap:14px;font-size:1.4rem;letter-spacing:.12em;font-weight:900;padding-bottom:10px;border-bottom:6px solid var(--rule);margin-bottom:18px}
+.sec>h2 span{font-family:var(--sans);font-size:.8rem;color:var(--rule);letter-spacing:.1em;font-weight:700}
+.sec>p,.sec p.body{margin-bottom:12px;max-width:44em}
+.h3{font-size:1.12rem;letter-spacing:.08em;margin:28px 0 10px}
+.small{font-size:.84rem;color:var(--ink-2);margin-top:10px}
+.fig{margin:18px 0;background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.fig figcaption,.photos figcaption{font-size:.8rem;color:var(--ink-2);padding:8px 12px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}.two .fig{margin:6px 0}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0}
+.photos figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.photos img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+.facts.f5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.fact{border-top:3px solid var(--rule);padding-top:8px}
+.fact b{display:block;font-family:var(--serif);font-size:1.4rem;font-weight:900;font-variant-numeric:tabular-nums}
+.fact span{font-size:.78rem;color:var(--ink-2);line-height:1.5;display:block}
+.bar{display:flex;height:26px;border-radius:3px;overflow:hidden;margin-top:6px}.bar span{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.8rem;margin-top:8px}
+.flow span{border:1.5px solid var(--ink);padding:3px 8px;border-radius:2px;background:var(--paper)}.flow em{font-style:normal;color:var(--rule)}
+.years{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px;font-size:.95rem}
+.years li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding-bottom:8px;border-bottom:1px dashed var(--line)}
+.years b{font-family:var(--serif);font-variant-numeric:tabular-nums;color:var(--rule)}
+.sys{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.sys>div{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:16px 18px}
+.sys h4{font-size:1rem;letter-spacing:.1em;padding-bottom:8px;border-bottom:2px solid var(--rule);margin-bottom:8px}
+.sys ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:.9rem}
+.sys li{background:var(--paper-2);border-radius:3px;padding:3px 10px}
+.ask{margin-top:16px;background:var(--paper-2);border-left:4px solid var(--rule);padding:14px 18px;border-radius:0 4px 4px 0}
+.ask b{display:block;font-size:.78rem;letter-spacing:.18em;color:var(--rule);margin-bottom:4px}
+.ask p{font-family:var(--serif);font-size:1.02rem}
+.route{list-style:none;margin:14px 0;padding:0;display:grid;gap:0}
+.route li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.94rem}
+.ml{color:inherit;text-decoration:underline;text-decoration-color:var(--sage);text-underline-offset:3px}.ml::after{content:" ↗";font-size:.75em;color:var(--rule)}.ml:hover{color:var(--rule)}
+.route time{font-family:var(--serif);font-weight:700;color:var(--rule);font-variant-numeric:tabular-nums}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:8.5em minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.steps b{font-family:var(--serif);color:var(--rule)}
+.steps p{font-size:.94rem}
+.six{list-style:none;margin:14px 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.six li{background:var(--forest);color:var(--on-forest);border-radius:3px;padding:10px 14px;font-family:var(--serif);font-weight:600;letter-spacing:.06em;font-size:.95rem}
+.flowline{list-style:none;margin:16px 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;counter-reset:f}
+.flowline li{counter-increment:f;border:1.5px solid var(--ink);border-radius:3px;padding:10px 12px 10px;font-size:.9rem;background:var(--card);position:relative}
+.flowline li::before{content:counter(f);display:block;font-family:var(--serif);font-weight:900;color:var(--rule);font-size:1.2rem;line-height:1.2}
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0}
+.cards3.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cards3>div{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--olive);border-radius:4px;padding:16px 18px}
+.cards3 h4{font-size:1rem;letter-spacing:.06em;margin-bottom:6px}.cards3 p{font-size:.9rem;color:var(--ink)}
+.qlist{display:grid;gap:8px;margin:14px 0}
+.qlist p{display:grid;grid-template-columns:2em minmax(0,1fr);gap:6px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:10px 14px;font-size:.93rem}
+.qlist b{font-family:var(--serif);font-size:1.2rem;color:var(--rule);line-height:1.4}
+.vs{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;margin:10px 0 14px}
+.vs div{background:var(--card);border:1.5px solid var(--ink);border-radius:6px;padding:14px;text-align:center;font-family:var(--serif);font-weight:700;letter-spacing:.06em}
+.vs em{font-style:normal;color:var(--rule);font-family:var(--serif)}
+.claims{margin:0;padding-left:1.2em;display:grid;gap:6px;font-size:.95rem}
+.table-wrap{overflow-x:auto}
+.cmp{width:100%;min-width:620px;border-collapse:collapse;font-size:.9rem;background:var(--card)}
+.cmp th,.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.cmp thead th{background:var(--forest);color:var(--on-forest);font-family:var(--serif);letter-spacing:.06em}
+.cmp tbody th{background:var(--paper-2);white-space:nowrap;font-family:var(--serif)}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--sage);margin-left:6px}
+.timeline li{display:grid;grid-template-columns:7em minmax(0,1fr);gap:16px;padding:12px 0 12px 18px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-7px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--rule)}
+.timeline .date{font-family:var(--serif);font-weight:700;font-variant-numeric:tabular-nums;color:var(--rule);font-size:.92rem;padding-top:2px}
+.timeline h3{font-size:1rem;letter-spacing:.04em;margin:4px 0 2px}
+.timeline p{font-size:.88rem;color:var(--ink-2)}
+.kind{display:inline-block;font-size:.72rem;letter-spacing:.12em;padding:1px 8px;border-radius:999px;color:#fff;background:var(--slate)}
+.k-walk{background:#5D7F43}.k-talk{background:#A0523F}.k-ws{background:#C27A26}.k-read{background:#3E6E8C}.k-intro{background:#7B5B8E}.k-forum{background:#2F7F7A}.k-show{background:var(--rule)}.k-org{background:var(--ink-2)}
+.tl-map{display:inline-block;margin-top:6px;font-size:.8rem;border:1px solid var(--rule);color:var(--rule);border-radius:999px;padding:2px 12px;text-decoration:none;background:none}
+.tl-map:hover{background:var(--rule);color:#fff}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.more a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:12px 14px}
+.more a:hover{border-color:var(--rule)}
+.more b{display:block;font-family:var(--serif);letter-spacing:.06em}.more span{font-size:.78rem;color:var(--ink-2)}
+footer{background:var(--forest);color:var(--on-forest)}footer .wrap{padding-block:22px 28px;font-size:.82rem;opacity:.8;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:inherit}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr);gap:18px}.side{position:static}.side .others{display:none}.side ol{display:flex;flex-wrap:wrap;gap:6px}.side ol a{border:1px solid var(--line);border-radius:999px;padding:3px 12px;background:var(--card)}
+ .facts.f5{grid-template-columns:repeat(3,minmax(0,1fr))}.cards3,.sys{grid-template-columns:minmax(0,1fr)}.flowline{grid-template-columns:repeat(2,minmax(0,1fr))}.six{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.two{grid-template-columns:minmax(0,1fr)}.hstats{gap:10px}.hstats b{font-size:1.25rem}.facts,.facts.f5{grid-template-columns:repeat(2,minmax(0,1fr))}.steps li{grid-template-columns:minmax(0,1fr);gap:2px}.timeline li{grid-template-columns:minmax(0,1fr);gap:0}.cards3.c2{grid-template-columns:minmax(0,1fr)}.vs{grid-template-columns:minmax(0,1fr)}.vs em{text-align:center}}
+
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="img/logo.png" alt="城市行聊走讀城鄉標誌" width="42" height="42"><span>城市行聊・走讀城鄉</span></a>
+<nav class="nav"><a href="index.html">首頁</a><a href="index.html#topics">閱讀主題</a><a href="index.html#events">歷屆活動</a><a href="journal.html">學會刊物</a><a href="index.html#join">加入我們</a></nav>
+</div></header>
+<div class="head"><div class="wrap">
+<p class="crumb"><a href="index.html#topics">閱讀主題回顧</a> ／ 農地非農用</p>
+<h1>農地非農用</h1>
+<p class="sub">稻田裡的工廠，是問題還是答案？</p>
+<span class="series">第一屆第一期・2022.12–2023.02</span>
+<p class="lead">讀書會成立後的第一個題目。大家想像中的農地是綠油油的稻田、果園與波光粼粼的魚塭，現實裡卻是稻田中夾著工廠、魚塭上長出光電板。這種現象合理嗎？該讓農地回歸農用，還是能容許其他使用？</p>
+<div class="hstats"><div><b>655.64</b><span>中科特定區農業區研究範圍（公頃）</span></div><div><b>25.18%</b><span>烏日溪南工業使用比例</span></div><div><b>3</b><span>場活動：說明會、走讀、角色扮演</span></div></div>
+</div></div>
+<div class="wrap layout">
+<aside class="side">
+<nav aria-label="本頁目錄"><h2>本頁目錄</h2><ol><li><a href="#define">臺灣怎麼定義農地</a></li><li><a href="#zhongke">案例一：中科特定區農業區</a></li><li><a href="#xinan">案例二：烏日溪南</a></li><li><a href="#roleplay">角色扮演：替每個陣營發聲</a></li><li><a href="#solar">分組簡報：平地光電</a></li><li><a href="#events-list">本主題活動</a></li></ol></nav>
+<nav class="others" aria-label="其他主題"><h2>其他主題</h2><ul><li><a href="topic-rural.html">鄉村地區整體規劃</a></li><li><a href="topic-energy.html">能源發展與轉型</a></li><li><a href="topic-heritage.html">文資保存與舊城再生</a></li><li><a href="topic-urban23.html">城鄉發展地區第二類之三</a></li><li><a href="topic-housing.html">住宅政策</a></li><li><a href="topic-renewal.html">都市更新</a></li><li><a href="topic-indigenous.html">原住民族土地與空間治理</a></li></ul></nav>
+</aside>
+<main>
+<section class="sec" id="define"><h2>臺灣怎麼定義農地</h2>
+   <p>同樣叫「農地」，在三套土地管理體系裡有不同的名字。讀書會先把這張對照表攤開，才知道後面談的「農地非農用」，到底是在哪一種農地上發生。</p>
+   <div class="sys">
+     <div><h4>國土計畫</h4><ul><li>農業發展地區第一類</li><li>農業發展地區第二類</li><li>農業發展地區第三類</li><li>農業發展地區第四類</li><li>農業發展地區第五類</li></ul></div>
+     <div><h4>都市計畫</h4><ul><li>農業區</li></ul></div>
+     <div><h4>非都市土地</h4><ul><li>特定農業區</li><li>一般農業區</li></ul></div>
+   </div></section><section class="sec" id="zhongke"><h2>案例一：中科特定區農業區</h2>
+   <p>以中科特定區農業區內 655.64 公頃為研究範圍，用 107 年全國國土利用調查盤點使用現況：水田仍是最大宗，但製造業與倉儲已經佔到 17%，越靠近中科路北側，工廠越密集。</p>
+   <div>
+              <div class="bar" role="img" aria-label="研究範圍土地使用比例：水田 30.74%、製造業 13.49%、旱田 11.65%、純住宅 10.46%、一般道路 7.58%、果園 4.21%、商業 3.83%、倉儲 3.55%、其他 14.49%">
+                <span style="width:30.74%;background:#A8CF8E"></span><span style="width:13.49%;background:#7A5C12"></span><span style="width:11.65%;background:#5E8A42"></span><span style="width:10.46%;background:#E8D84A"></span><span style="width:7.58%;background:#7D7D7D"></span><span style="width:4.21%;background:#3D5A2A"></span><span style="width:3.83%;background:#D9433A"></span><span style="width:3.55%;background:#8A4A1C"></span><span style="width:14.49%;background:#B9B4B4"></span>
+              </div>
+              <div class="legend" style="margin-top:8px">
+                <span><i style="background:#A8CF8E"></i>水田 30.74%</span><span><i style="background:#7A5C12"></i>製造業 13.49%</span><span><i style="background:#5E8A42"></i>旱田 11.65%</span><span><i style="background:#E8D84A"></i>純住宅 10.46%</span><span><i style="background:#7D7D7D"></i>道路 7.58%</span><span><i style="background:#3D5A2A"></i>果園 4.21%</span><span><i style="background:#D9433A"></i>商業 3.83%</span><span><i style="background:#8A4A1C"></i>倉儲 3.55%</span><span><i style="background:#B9B4B4"></i>其他 14.49%</span>
+              </div>
+            </div>
+            <div class="facts">
+              <div class="fact"><b>655.64</b><span>研究範圍（公頃）</span></div>
+              <div class="fact"><b>23.36%</b><span>中科路以北製造業比例，為該區最大宗</span></div>
+              <div class="fact"><b>3.24%</b><span>中科路以南倉儲比例</span></div>
+            </div>
+            <p style="font-size:.85rem;color:var(--ink-2)">討論的解方：《工廠管理輔導法》未登記工廠納管流程</p>
+            <div class="flow" aria-label="未登記工廠納管流程">
+              <span>符合納管條件</span><em>→</em><span>111.03.19 前提出改善計畫</span><em>→</em><span>兩年內完成改善</span><em>→</em><span>繳農變金・特定工廠登記</span><em>→</em><span>分區變更（非都：特目／都內：特工專區）</span>
+            </div>
+   <div class="photos"><figure><img src="img/f1.jpg" alt="中科路北側農業區內的鐵皮工廠街道" width="1200" height="800" loading="lazy"><figcaption>中科路北側農業區內的鐵皮工廠街道</figcaption></figure><figure><img src="img/f3.jpg" alt="農田旁的物流倉儲" width="1200" height="800" loading="lazy"><figcaption>農田旁的物流倉儲</figcaption></figure><figure><img src="img/qianxing.jpg" alt="研究範圍內的謙興堂三合院" width="1200" height="800" loading="lazy"><figcaption>研究範圍內的謙興堂三合院</figcaption></figure></div></section><section class="sec" id="xinan"><h2>案例二：烏日溪南</h2>
+   <p>烏日溪南位在烏溪南岸、高鐵烏日基地旁，過去是番仔園、溪心埧、石螺潭、克里喀四個聚落的農村。許多沒有登記的工廠陸續進駐農地，當時的臺中縣政府為了輔導工廠合法化，曾規劃以市地重劃徵收農地，新訂「烏日（溪南）產業發展特定區」。第一次走讀由陳建華負責，帶大家實地走進這片農地。</p>
+   <div class="facts f5">
+     <div class="fact"><b>386.93</b><span>農業使用（公頃）・46.49%</span></div>
+     <div class="fact"><b>209.55</b><span>工業使用（公頃）・25.18%</span></div>
+     <div class="fact"><b>63.13</b><span>住宅使用（公頃）・7.61%</span></div>
+     <div class="fact"><b>17.14</b><span>商業使用（公頃）・2.06%</span></div>
+     <div class="fact"><b>2.10</b><span>森林使用（公頃）・0.25%</span></div>
+   </div>
+   <figure class="fig"><img src="img/t/s-xinan-landuse.jpg" alt="烏日溪南的土地使用現況，工業使用已佔四分之一" width="1280" height="720" loading="lazy"><figcaption>烏日溪南的土地使用現況，工業使用已佔四分之一</figcaption></figure>
+   <figure class="fig"><img src="img/t/s-xinan-oldmap.jpg" alt="日治二萬分之一台灣堡圖（1904）與臺中州水利組合灌溉區域圖（1937）" width="1280" height="720" loading="lazy"><figcaption>日治二萬分之一台灣堡圖（1904）與臺中州水利組合灌溉區域圖（1937）</figcaption></figure>
+   <div class="two"><figure class="fig"><img src="img/t/s-xinan-villages.jpg" alt="溪南四大聚落：番仔園、溪心埧、石螺潭、克里喀" width="1280" height="720" loading="lazy"><figcaption>溪南四大聚落：番仔園、溪心埧、石螺潭、克里喀</figcaption></figure><figure class="fig"><img src="img/t/s-xinan-plan.jpg" alt="新訂烏日（溪南）產業發展特定區計畫規劃案" width="1280" height="720" loading="lazy"><figcaption>新訂烏日（溪南）產業發展特定區計畫規劃案</figcaption></figure></div>
+   <h3 class="h3">農地工廠旁，長出台灣第一好米？</h3>
+   <p>走讀當天拜訪了烏日冠軍米農林凡閔。他的稻米拿下 108 年農糧署「臺灣稻米達人冠軍賽」好米組冠軍，也獲得日本「米・食味分析鑑定競賽」第 24 屆特別優秀賞。同一片溪南農地上，冠軍米和鐵皮工廠比鄰而居。</p>
+   <ol class="route">
+     <li><time>11:30</time><span>萊爾富中縣中溪店集合</span></li>
+     <li><time>11:40</time><span>茶奶奶買午餐</span></li>
+     <li><time>12:10</time><span>鍊發壘球場周邊，徒步看農地工廠</span></li>
+     <li><time>12:50</time><span>冠軍米農地參訪，訪談林凡閔</span></li>
+     <li><time>14:20</time><span>高鐵烏日基地、烏溪堤防、東園稻田公園、東園社區</span></li>
+   </ol>
+   <div class="photos"><figure><img src="img/t/farm-xinan-group.jpg" alt="第一次走讀，在溪南農地上空拍大合照" width="842" height="511" loading="lazy"><figcaption>第一次走讀，在溪南農地上空拍大合照</figcaption></figure><figure><img src="img/t/farm-factory.jpg" alt="稻田旁的工廠與耕耘機" width="1100" height="825" loading="lazy"><figcaption>稻田旁的工廠與耕耘機</figcaption></figure><figure><img src="img/t/farm-walk.jpg" alt="走讀時與在地農民交談" width="1100" height="733" loading="lazy"><figcaption>走讀時與在地農民交談</figcaption></figure><figure><img src="img/t/farm-field.jpg" alt="溪南的油菜花田與高壓電塔" width="1100" height="825" loading="lazy"><figcaption>溪南的油菜花田與高壓電塔</figcaption></figure></div></section><section class="sec" id="roleplay"><h2>角色扮演：替每個陣營發聲</h2>
+   <p>寒假過後的第二次讀書會，先分享溪南走讀的心得，再把大家分成農民、業主、政府與規劃者四個陣營。題目是：根據整個寒假學到的東西，把自己帶入分組的角色，設身處地想想他們的優缺點。</p>
+   <div class="qlist">
+     <p><b>1</b>溪南地區是否該設置產業園區？</p>
+     <p><b>2</b>未登記工廠「就地合法」的優缺點？</p>
+     <p><b>3</b>農地非農用，會怎麼影響糧食自給率？</p>
+   </div>
+   <p>討論的規則只有三個字：尊重、理性、平和。各組派代表上台分享後，讀書會也預告了下一期的主題「鄉村地區整體規劃」與清水走讀。</p>
+   <div class="ask"><b>讀書會拋出的問題</b><p>這種現象合理嗎？該讓農地回歸農用，或能容許其他使用？</p></div></section><section class="sec" id="solar"><h2>分組簡報：平地光電</h2>
+   <p>同一場讀書會上，「平地光電 A 組」（幹部郭文翔、徐詠晶）把農地非農用延伸到光電：從太陽能板的原理與結構講起，再談政策目標與它在農地、魚塭上引起的競合。</p>
+   <div class="facts f3">
+     <div class="fact"><b>20 GW</b><span>光電設置目標：屋頂 3 GW、地面 17 GW</span></div>
+     <div class="fact"><b>25 萬</b><span>所需面積（公頃）：屋頂 2.5 萬、地面 22.5 萬</span></div>
+     <div class="fact"><b>650</b><span>嘉義義竹、台南七股、北門三處漁電共生專區（公頃）</span></div>
+   </div>
+   <ul class="claims">
+     <li><b>先屋頂、後地面</b>：初期推動屋頂型設置，再逐步推動地面型的大規模開發。</li>
+     <li><b>農地上的上限</b>：依《申請農業用地作農業設施容許使用審查辦法》，含綠能設備在內的農業設施總面積，不得超過坐落農業用地面積的 40%。</li>
+     <li><b>與農漁業的競合</b>：漁電共生有立柱型、塭堤型、浮台型；漁民、綠能公司與政府三方立場不同。</li>
+     <li><b>被忽略的生態</b>：板下的三角空間成了鳥類築巢點，卻伴隨感電與火災風險。光電架設若有完善的環境與社會檢核、避開生態敏感區，才能減少衝擊。</li>
+   </ul></section>
+<section class="sec" id="events-list"><h2>本主題活動<span>3 場</span></h2><ul class="timeline"><li><p class="date">2022.12.23</p><div><span class="kind k-intro">說明會</span><h3>首場說明會暨第一期讀書會</h3><p>閱讀主題「農地非農用」，以中科特定區農業區為案例。忠勤樓 B08。</p></div></li><li><p class="date">2023.01.14</p><div><span class="kind k-walk">走讀</span><h3>烏日溪南走讀</h3><p>負責人陳建華。徒步看農地工廠，拜訪烏日冠軍米農林凡閔，再到高鐵烏日基地、烏溪堤防與東園社區。</p><a class="tl-map" href="index.html#walk-wuri">在走讀地圖上看 →</a></div></li><li><p class="date">2023.02.17</p><div><span class="kind k-ws">工作坊</span><h3>第二次讀書會：農地非農用角色扮演</h3><p>分成農民、業主、政府、規劃者陣營，替角色發聲。</p></div></li></ul></section>
+<section class="sec"><h2>其他閱讀主題</h2><div class="more"><a href="topic-rural.html"><b>鄉村地區整體規劃</b><span>第一屆・第三屆第三期・第四屆第二期</span></a><a href="topic-energy.html"><b>能源發展與轉型</b><span>第二屆第一期・第四屆第一期</span></a><a href="topic-heritage.html"><b>文資保存與舊城再生</b><span>第二屆第二期・2023.12–2024.03</span></a><a href="topic-urban23.html"><b>城鄉發展地區第二類之三</b><span>第二屆第三期・2024.04–2024.06・第四屆延伸</span></a><a href="topic-housing.html"><b>住宅政策</b><span>第三屆第一期・2024.09–2024.11</span></a><a href="topic-renewal.html"><b>都市更新</b><span>第三屆第二期・2024.11–2025.03</span></a><a href="topic-indigenous.html"><b>原住民族土地與空間治理</b><span>第三屆第四期・2025.05–2025.06</span></a></div></section>
+</main>
+</div>
+<footer><div class="wrap"><span>社團法人臺灣城市行聊走讀城鄉學會・<a href="index.html">回首頁</a>・<a href="journal.html">學會刊物《土地註腳》</a></span><span>內容整理自讀書會各期簡報與成果資料</span></div></footer>
+<script>(function(){var links=[].slice.call(document.querySelectorAll('.side ol a'));if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-30% 0px -60% 0px'});document.querySelectorAll('.sec').forEach(function(s){io.observe(s);});})();</script>
+</body></html>

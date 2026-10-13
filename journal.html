@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>土地註腳｜城市行聊・走讀城鄉</title>
+<meta name="description" content="社團法人臺灣城市行聊走讀城鄉學會刊物《土地註腳》第 1 期：第三屆讀書會一年的活動、時事分享、每月議題與劉曜華老師專訪。">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: 與主題頁同一套版型；標頭放刊物封面與下載，內文依刊物目錄分段 */
+
+:root{--paper:#EEEDE5;--paper-2:#E4E2D6;--ink:#24271F;--ink-2:#5B5D50;--rule:#9A6E47;--olive:#ADA987;--sage:#C9C5A8;--forest:#2F3A2B;--on-forest:#EEEDE5;--slate:#3E5566;--pin:#E39A55;--card:#F6F5EF;--line:rgba(36,39,31,.14);
+--serif:"Noto Serif TC","Songti TC","PMingLiU",serif;--sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;color-scheme:light}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:84px}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--rule);outline-offset:3px;border-radius:4px}
+h1,h2,h3,h4{font-family:var(--serif);margin:0;line-height:1.45;text-wrap:balance}p{margin:0}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:20px}
+.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}.brand img{width:42px;height:42px}
+.brand span{font-family:var(--serif);font-weight:600;letter-spacing:.14em;white-space:nowrap}
+.nav{display:flex;gap:6px;flex-wrap:wrap}.nav a{text-decoration:none;font-size:.9rem;padding:6px 10px;border-radius:6px;color:var(--ink-2)}
+.nav a:hover{background:var(--paper-2);color:var(--ink)}
+@media (max-width:560px){.brand span{display:none}.nav a{padding:6px 7px;font-size:.85rem}}
+.head{background:var(--forest);color:var(--on-forest)}
+.head .wrap{padding-block:34px 36px;display:grid;gap:12px}
+.crumb{font-size:.8rem;letter-spacing:.14em;color:var(--sage)}.crumb a{text-decoration:none}.crumb a:hover{text-decoration:underline}
+.head h1{font-size:clamp(1.7rem,4vw,2.6rem);letter-spacing:.14em;font-weight:900}
+.head .sub{font-family:var(--serif);font-size:1.1rem;color:var(--sage);letter-spacing:.06em}
+.head .series{display:inline-block;justify-self:start;font-size:.8rem;letter-spacing:.12em;border:1px solid rgba(238,237,229,.4);border-radius:999px;padding:3px 12px}
+.head .lead{max-width:46em;font-size:.98rem;opacity:.92}
+.hstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:8px;max-width:760px}
+.hstats div{border-top:3px solid var(--pin);padding-top:8px}
+.hstats b{display:block;font-family:var(--serif);font-size:1.6rem;font-weight:900;font-variant-numeric:tabular-nums}
+.hstats span{font-size:.8rem;opacity:.8;line-height:1.5;display:block}
+.layout{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:44px;padding-block:36px 70px}
+.side{position:sticky;top:84px;align-self:start;display:grid;gap:22px}
+.side h2{font-family:var(--sans);font-size:.74rem;letter-spacing:.22em;color:var(--rule);font-weight:700;margin-bottom:6px}
+.side ol,.side ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.side a{display:block;text-decoration:none;font-size:.9rem;padding:4px 0 4px 10px;border-left:3px solid transparent;color:var(--ink-2)}
+.side a:hover{border-left-color:var(--olive);color:var(--ink)}.side a.on{border-left-color:var(--rule);color:var(--ink);font-weight:600}
+main{min-width:0}
+.sec{margin-bottom:54px}
+.sec>h2{display:flex;align-items:baseline;gap:14px;font-size:1.4rem;letter-spacing:.12em;font-weight:900;padding-bottom:10px;border-bottom:6px solid var(--rule);margin-bottom:18px}
+.sec>h2 span{font-family:var(--sans);font-size:.8rem;color:var(--rule);letter-spacing:.1em;font-weight:700}
+.sec>p,.sec p.body{margin-bottom:12px;max-width:44em}
+.h3{font-size:1.12rem;letter-spacing:.08em;margin:28px 0 10px}
+.small{font-size:.84rem;color:var(--ink-2);margin-top:10px}
+.fig{margin:18px 0;background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.fig figcaption,.photos figcaption{font-size:.8rem;color:var(--ink-2);padding:8px 12px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}.two .fig{margin:6px 0}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0}
+.photos figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.photos img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+.facts.f5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.fact{border-top:3px solid var(--rule);padding-top:8px}
+.fact b{display:block;font-family:var(--serif);font-size:1.4rem;font-weight:900;font-variant-numeric:tabular-nums}
+.fact span{font-size:.78rem;color:var(--ink-2);line-height:1.5;display:block}
+.bar{display:flex;height:26px;border-radius:3px;overflow:hidden;margin-top:6px}.bar span{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.8rem;margin-top:8px}
+.flow span{border:1.5px solid var(--ink);padding:3px 8px;border-radius:2px;background:var(--paper)}.flow em{font-style:normal;color:var(--rule)}
+.years{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px;font-size:.95rem}
+.years li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding-bottom:8px;border-bottom:1px dashed var(--line)}
+.years b{font-family:var(--serif);font-variant-numeric:tabular-nums;color:var(--rule)}
+.sys{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.sys>div{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:16px 18px}
+.sys h4{font-size:1rem;letter-spacing:.1em;padding-bottom:8px;border-bottom:2px solid var(--rule);margin-bottom:8px}
+.sys ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:.9rem}
+.sys li{background:var(--paper-2);border-radius:3px;padding:3px 10px}
+.ask{margin-top:16px;background:var(--paper-2);border-left:4px solid var(--rule);padding:14px 18px;border-radius:0 4px 4px 0}
+.ask b{display:block;font-size:.78rem;letter-spacing:.18em;color:var(--rule);margin-bottom:4px}
+.ask p{font-family:var(--serif);font-size:1.02rem}
+.route{list-style:none;margin:14px 0;padding:0;display:grid;gap:0}
+.route li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.94rem}
+.ml{color:inherit;text-decoration:underline;text-decoration-color:var(--sage);text-underline-offset:3px}.ml::after{content:" ↗";font-size:.75em;color:var(--rule)}.ml:hover{color:var(--rule)}
+.route time{font-family:var(--serif);font-weight:700;color:var(--rule);font-variant-numeric:tabular-nums}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:8.5em minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.steps b{font-family:var(--serif);color:var(--rule)}
+.steps p{font-size:.94rem}
+.six{list-style:none;margin:14px 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.six li{background:var(--forest);color:var(--on-forest);border-radius:3px;padding:10px 14px;font-family:var(--serif);font-weight:600;letter-spacing:.06em;font-size:.95rem}
+.flowline{list-style:none;margin:16px 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;counter-reset:f}
+.flowline li{counter-increment:f;border:1.5px solid var(--ink);border-radius:3px;padding:10px 12px 10px;font-size:.9rem;background:var(--card);position:relative}
+.flowline li::before{content:counter(f);display:block;font-family:var(--serif);font-weight:900;color:var(--rule);font-size:1.2rem;line-height:1.2}
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0}
+.cards3.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cards3>div{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--olive);border-radius:4px;padding:16px 18px}
+.cards3 h4{font-size:1rem;letter-spacing:.06em;margin-bottom:6px}.cards3 p{font-size:.9rem;color:var(--ink)}
+.qlist{display:grid;gap:8px;margin:14px 0}
+.qlist p{display:grid;grid-template-columns:2em minmax(0,1fr);gap:6px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:10px 14px;font-size:.93rem}
+.qlist b{font-family:var(--serif);font-size:1.2rem;color:var(--rule);line-height:1.4}
+.vs{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;margin:10px 0 14px}
+.vs div{background:var(--card);border:1.5px solid var(--ink);border-radius:6px;padding:14px;text-align:center;font-family:var(--serif);font-weight:700;letter-spacing:.06em}
+.vs em{font-style:normal;color:var(--rule);font-family:var(--serif)}
+.claims{margin:0;padding-left:1.2em;display:grid;gap:6px;font-size:.95rem}
+.table-wrap{overflow-x:auto}
+.cmp{width:100%;min-width:620px;border-collapse:collapse;font-size:.9rem;background:var(--card)}
+.cmp th,.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.cmp thead th{background:var(--forest);color:var(--on-forest);font-family:var(--serif);letter-spacing:.06em}
+.cmp tbody th{background:var(--paper-2);white-space:nowrap;font-family:var(--serif)}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--sage);margin-left:6px}
+.timeline li{display:grid;grid-template-columns:7em minmax(0,1fr);gap:16px;padding:12px 0 12px 18px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-7px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--rule)}
+.timeline .date{font-family:var(--serif);font-weight:700;font-variant-numeric:tabular-nums;color:var(--rule);font-size:.92rem;padding-top:2px}
+.timeline h3{font-size:1rem;letter-spacing:.04em;margin:4px 0 2px}
+.timeline p{font-size:.88rem;color:var(--ink-2)}
+.kind{display:inline-block;font-size:.72rem;letter-spacing:.12em;padding:1px 8px;border-radius:999px;color:#fff;background:var(--slate)}
+.k-walk{background:#5D7F43}.k-talk{background:#A0523F}.k-ws{background:#C27A26}.k-read{background:#3E6E8C}.k-intro{background:#7B5B8E}.k-forum{background:#2F7F7A}.k-show{background:var(--rule)}.k-org{background:var(--ink-2)}
+.tl-map{display:inline-block;margin-top:6px;font-size:.8rem;border:1px solid var(--rule);color:var(--rule);border-radius:999px;padding:2px 12px;text-decoration:none;background:none}
+.tl-map:hover{background:var(--rule);color:#fff}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.more a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:12px 14px}
+.more a:hover{border-color:var(--rule)}
+.more b{display:block;font-family:var(--serif);letter-spacing:.06em}.more span{font-size:.78rem;color:var(--ink-2)}
+footer{background:var(--forest);color:var(--on-forest)}footer .wrap{padding-block:22px 28px;font-size:.82rem;opacity:.8;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:inherit}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr);gap:18px}.side{position:static}.side .others{display:none}.side ol{display:flex;flex-wrap:wrap;gap:6px}.side ol a{border:1px solid var(--line);border-radius:999px;padding:3px 12px;background:var(--card)}
+ .facts.f5{grid-template-columns:repeat(3,minmax(0,1fr))}.cards3,.sys{grid-template-columns:minmax(0,1fr)}.flowline{grid-template-columns:repeat(2,minmax(0,1fr))}.six{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.two{grid-template-columns:minmax(0,1fr)}.hstats{gap:10px}.hstats b{font-size:1.25rem}.facts,.facts.f5{grid-template-columns:repeat(2,minmax(0,1fr))}.steps li{grid-template-columns:minmax(0,1fr);gap:2px}.timeline li{grid-template-columns:minmax(0,1fr);gap:0}.cards3.c2{grid-template-columns:minmax(0,1fr)}.vs{grid-template-columns:minmax(0,1fr)}.vs em{text-align:center}}
+
+.jhead{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:32px;align-items:center}
+.jhead .cover{border-radius:3px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35);background:#fff}
+.dl{display:inline-flex;align-items:center;gap:8px;justify-self:start;margin-top:6px;background:var(--on-forest);color:var(--forest);font-weight:700;text-decoration:none;padding:9px 18px;border-radius:999px;font-size:.92rem}
+.dl:hover{background:var(--sage)}.dl small{font-weight:400;opacity:.75}
+.acts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+.acts li{display:grid;grid-template-columns:6.2em minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.93rem}
+.acts time{font-family:var(--serif);font-weight:700;color:var(--rule);font-variant-numeric:tabular-nums}
+.acts a{text-decoration:none}.acts a:hover{color:var(--rule);text-decoration:underline}
+.news{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.news>div{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--olive);border-radius:4px;padding:14px 18px}
+.news h4{font-size:1rem;letter-spacing:.06em;margin-bottom:6px}
+.news ul{margin:0;padding-left:1.1em;display:grid;gap:4px;font-size:.9rem}
+.issues{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.issue{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:18px 20px;display:grid;gap:8px;align-content:start}
+.issue .tag{font-size:.74rem;letter-spacing:.14em;color:var(--rule);font-weight:700}
+.issue h3{font-size:1.08rem;letter-spacing:.04em}
+.issue>p{font-size:.92rem}
+.issue ul{margin:0;padding-left:1.1em;display:grid;gap:4px;font-size:.86rem;color:var(--ink-2)}
+.iv{display:grid;grid-template-columns:240px minmax(0,1fr);gap:28px;align-items:start}
+.iv .pic{border:1px solid var(--line);border-radius:4px;overflow:hidden;position:sticky;top:90px}
+.iv .lead2{font-family:var(--serif);font-size:1.05rem;line-height:1.9;margin-bottom:16px}
+.q{padding:14px 0;border-bottom:1px dashed var(--line)}
+.q h4{font-size:1rem;letter-spacing:.06em;margin-bottom:4px}.q>p{font-size:.9rem;color:var(--ink-2)}
+.q blockquote{margin:8px 0 0;padding:8px 0 8px 14px;border-left:4px solid var(--rule);font-family:var(--serif);font-size:1.05rem;line-height:1.8}
+.credit{font-size:.86rem;color:var(--ink-2);display:grid;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:14px 18px;margin-top:14px}
+.credit b{color:var(--ink);font-weight:600;margin-right:6px}
+@media (max-width:900px){.jhead{grid-template-columns:minmax(0,1fr) 150px;gap:18px}.acts,.news,.issues{grid-template-columns:minmax(0,1fr)}.iv{grid-template-columns:minmax(0,1fr)}.iv .pic{position:static;max-width:260px}}
+@media (max-width:560px){.jhead{grid-template-columns:minmax(0,1fr)}.jhead .cover{max-width:180px}}
+
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="img/logo.png" alt="城市行聊走讀城鄉標誌" width="42" height="42"><span>城市行聊・走讀城鄉</span></a>
+<nav class="nav"><a href="index.html">首頁</a><a href="index.html#topics">閱讀主題</a><a href="index.html#events">歷屆活動</a><a href="journal.html" style="color:var(--ink);background:var(--paper-2)">學會刊物</a><a href="index.html#join">加入我們</a></nav>
+</div></header>
+<div class="head"><div class="wrap jhead">
+<div style="display:grid;gap:12px">
+<p class="crumb"><a href="index.html">首頁</a> ／ 學會刊物</p>
+<h1>土地註腳</h1>
+<p class="sub">Footnotes of the Land・走讀城鄉，愛上腳下的土地</p>
+<span class="series">第 1 期・2024.9–2025.6・第三屆工作小組</span>
+<p class="lead">我們是一群來自全臺各地、熱愛臺灣這片土地的青年，透過議題挖掘、實地走讀推動國土規劃，培養對城市與鄉村的理解與熱情。這一期整理了第三屆讀書會一整年的活動、時事分享、每月議題，以及劉曜華老師的專訪。</p>
+</div>
+<div class="cover"><img src="img/t/fn-cover.jpg" alt="《土地註腳》第 1 期封面" width="760" height="1072" loading="lazy"></div>
+</div></div>
+<div class="wrap layout">
+<aside class="side">
+<nav aria-label="本頁目錄"><h2>本頁目錄</h2><ol><li><a href="#about">關於這本刊物</a></li><li><a href="#acts">活動紀錄</a></li><li><a href="#news">時事分享</a></li><li><a href="#issues">議題探討：每月議題</a></li><li><a href="#interview">專訪：劉曜華老師</a></li></ol></nav>
+</aside>
+<main>
+<section class="sec" id="about"><h2>關於這本刊物</h2>
+<p>《土地註腳》是第三屆讀書會的活動成果刊物，由社團法人臺灣城市行聊走讀城鄉學會第三屆工作小組編寫。刊物分成四個部分：活動紀錄、時事分享、議題探討與訪談，把讀書會一年來讀過、走過、討論過的事情留下紀錄。</p>
+<div class="credit">
+<p><b>編者／校對</b>馬靖恩、盧科樺、葉侑嘉、陳宥翔、王騰德、賴嘉怡、李亭葦、余東威、王韻蓉、廖宜柔、王昱權、雷承霖、歐彥伶、張天欣、陳彥均</p>
+<p><b>封面設計・內頁排版</b>李亭葦</p>
+<p><b>協助出版</b>睿誼工程顧問股份有限公司</p>
+</div>
+</section>
+<section class="sec" id="acts"><h2>活動紀錄<span>13 場</span></h2>
+<p>第三屆從住宅政策、都市更新、鄉村地區整體規劃到原住民土地，每一場都寫進了刊物。點活動名稱可以到對應的主題頁看完整內容。</p>
+<ul class="acts"><li><time>2024.09.27</time><a href="topic-housing.html">社會住宅工作坊</a></li><li><time>2024.10.25</time><a href="topic-housing.html">《無住之島：居住困境與改革實踐》講座</a></li><li><time>2024.11.15</time><a href="topic-housing.html">住宅政策工作坊</a></li><li><time>2024.11.22</time><a href="topic-housing.html">《國土規劃下住宅政策的未來與挑戰》講座</a></li><li><time>2024.11.27</time><a href="topic-housing.html">《社會住宅空間探索》參訪</a></li><li><time>2024.11.29</time><a href="topic-renewal.html">都市更新讀書會</a></li><li><time>2024.12.23</time><a href="topic-renewal.html">《那些年臺北市走過的都更之路》講座</a></li><li><time>2025.03.05</time><a href="topic-renewal.html">第二次都市更新讀書會</a></li><li><time>2025.03.09</time><a href="topic-renewal.html">《彰化舊城區走讀》</a></li><li><time>2025.03.26</time><a href="topic-rural.html">鄉村地區整體規劃讀書會</a></li><li><time>2025.04.16</time><a href="topic-rural.html">《國土計畫的新篇章》鄉規實務講座</a></li><li><time>2025.05.14</time><a href="topic-indigenous.html">原住民土地及空間治理讀書會</a></li><li><time>2025.05.25</time><a href="topic-rural.html">《苑裡走讀暨鄉規工作坊》</a></li></ul>
+</section>
+<section class="sec" id="news"><h2>時事分享</h2>
+<p>讀書會在社群上分享與空間規劃有關的時事，刊物整理成四個面向：</p>
+<div class="news"><div><h4>都市更新與住宅政策</h4><ul><li>《都市更新條例》第 65 條修正三讀，放寬合法建物的適用範圍、增加改建誘因</li><li>彰化溪州台糖土地的開發爭議</li><li>高鐵延伸屏東，六塊厝設站與南臺灣一日生活圈</li><li>桃園修正「都市計畫法桃園市施行細則」，回應住宅政策與 2050 淨零</li></ul></div><div><h4>文化、社會與教育</h4><ul><li>新青安貸款是什麼</li><li>「古蹟歷史建築紀念建築土地容積移轉辦法」更名，納入歷史建築與紀念建築</li></ul></div><div><h4>環境與氣候變遷</h4><ul><li>高雄大林蒲的工業污染與遷村計畫</li><li>COP29 與氣候變遷下的都市治理</li></ul></div><div><h4>土地、徵收與法制爭議</h4><ul><li>碳費三子法公告，臺灣進入碳定價時代</li><li>臺中大里聯合行政中心的社宅用地爭議</li><li>《國土計畫法》上路，四大功能分區取代非都市土地使用分區</li><li>員林黃金帝國大樓，彰化縣首個公辦都更</li></ul></div></div>
+</section>
+<section class="sec" id="issues"><h2>議題探討：每月議題</h2>
+<p>從 2024 年 9 月開始，讀書會推出「每月議題」，每個月挑一個主題寫成一篇文章。以下是各篇的摘要。</p>
+<div class="issues"><article class="issue"><p class="tag">2024.09・社會住宅</p><h3>共融．共榮：社會住宅與原社區的相互包容</h3><p>每月議題的第一篇，延續第三屆的住宅主題。社宅推動時常遇到「鄰避效應」，居民擔心交通、治安與房價受影響；有效的解方是建立多元的共融機制，讓社宅與原社區互補共生。</p><ul><li>問題：社區反對、利益與回饋爭議、社區共融</li><li>案例：高雄凱旋青樹、臺中公園一期社宅（將三合院「埕」導入設計，留設 48 處公共場域）、荷蘭社會住宅與「住宅法人」</li><li>存量對比（2018）：臺灣 0.121%、臺北市 0.803%，荷蘭 32%、阿姆斯特丹 46%</li></ul></article><article class="issue"><p class="tag">住宅與土地使用</p><h3>住商混合：樓下就是店面的城市</h3><p>在臺灣，新蓋的公寓一樓也常被當成店面，這在某些國家卻很少見。文章從住商分離（single-use zoning）的起源，談到臺灣帶狀分布的商業與條列式許可制的土地使用管制。</p><ul><li>住商分離源自 1900 年代初的紐約與霍華德的田園城市構想</li><li>住商混合的優勢：生活便利、活化街區、減輕交通壓力、提高土地使用效率；問題是噪音與髒亂</li><li>案例：中國的坊市與「小區」、日本第一種住居地域、香港南山邨、鹿特丹拱廊市場</li></ul></article><article class="issue"><p class="tag">環境與氣候變遷</p><h3>《氣候變遷因應法》帶來哪些影響？</h3><p>從 2015 年的《溫室氣體減量及管理法》到 2023 年更名為《氣候變遷因應法》，臺灣把 2050 淨零排放入法。文章整理它對政府與企業的影響，以及中央政策如何落實到地方城鄉。</p><ul><li>四大重點：碳費徵收、碳盤查與管理、能源轉型、自願減量計畫</li><li>政府端：權責更明確、定期報告、納入「公正轉型」，行動綱領改為至少每四年檢討</li><li>企業端：碳費專款專用於溫室氣體管理基金，自主減量可申請優惠費率</li></ul></article><article class="issue"><p class="tag">土地與農業</p><h3>農業權：國土計畫延後實施下的新爭議</h3><p>《國土計畫法》延後實施之際，雲林縣政府提出「農業權」，希望保障農地價值與農民權益。文章並陳地方政府、中央與農民三方的立場。</p><ul><li>雲林縣的四項建議：中央統一規劃農地發展權移轉、財政收支公平劃分、成立農產專區、發展產業園區培育農業科技人才</li><li>政府說法：農業權與農業發展權移轉（TDR）不同；《國土計畫法》對 2 公頃以上的重大違規才裁罰 30 萬至 500 萬元</li><li>雲林縣指出只需 2.3 萬公頃農地即可滿足糧食需求，卻被要求劃設 8.7 萬公頃</li></ul></article><article class="issue"><p class="tag">土地、徵收與法制</p><h3>自辦市地重劃到底在吵什麼？</h3><p>全國各級法院審理自辦市地重劃的裁判書超過五千件。文章先釐清公辦與自辦重劃的差異，再以高雄大樹湖底自辦重劃案為例（已遭檢方起訴、重劃暫停），談「二分之一多數決」的爭議。</p><ul><li>截至 112 年：公辦重劃 14,577 公頃（高雄最多），自辦重劃 3,898 公頃（臺中最多，1,040 公頃）</li><li>爭議：人頭地主灌票、配地與估價不透明、抵費地利益歸屬，政府以「私權糾紛」迴避</li><li>內政部修法方向：加強管理重劃會與開發公司、落實費用審查監督、強化審查基準（公開聽證、合議制審議）</li></ul></article><article class="issue"><p class="tag">2025.04・環境與氣候變遷</p><h3>自然碳匯：從國土規劃到淨零排放的關鍵連結</h3><p>碳匯是儲存二氧化碳的「倉庫」。文章比較森林、濕地、海洋等自然碳匯與碳捕捉封存（CCUS）等人工碳匯，並說明國土功能分區與都市成長邊界在碳匯保育上扮演的角色。</p><ul><li>人工碳匯成本每噸約 50–70 美元，國內仍在示範階段</li><li>國土保育、海洋資源與農業發展地區，都具備自然碳匯的發展潛力</li><li>都市成長邊界（UGB）能保護高碳儲存地區，防止都市蔓延造成碳釋放</li></ul></article></div>
+</section>
+<section class="sec" id="interview"><h2>專訪：劉曜華老師</h2>
+<div class="iv">
+<div class="pic"><img src="img/t/fn-interview.jpg" alt="專訪開頁：試圖在空間規劃的教育現場展開不一樣的試驗" width="760" height="1072" loading="lazy"></div>
+<div>
+<p class="lead2">「你學都市計畫，卻從沒用都市計畫的眼睛看過你住的地方嗎？」這是劉曜華老師常對學生拋出的問題。這篇專訪〈試圖在空間規劃的教育現場展開不一樣的試驗〉，談他從文學走進規劃的路，也談教育的困境、學生的茫然與制度的盲點。</p>
+<div class="q"><h4>從文學走進城市，從感性走向責任</h4><p>劉曜華老師大學唸外文系，到美國先讀國際政治，一次和佛羅里達大學都市計畫研究所主任的對談，才讓他走進規劃。</p><blockquote>「人的因素一旦進來，規劃就不再只是工學院的技術問題。」</blockquote></div><div class="q"><h4>在教學路上的思索與自我提醒</h4><p>回臺後，他追溯臺灣規劃教育的來處：日治時期的空間統制、戰後的聯合國技術移植，到 1980 年代以降民間聲音的興起。</p><blockquote>「我們不能只是做半套。我們畫的每一張圖、做的每一次規劃，背後都關係到人民的權益與生活。」</blockquote></div><div class="q"><h4>教育現場的困惑與體悟</h4><p>他早已放棄傳統的期中期末考，改採重視參與過程的課程，也常要求學生寫下心得。</p><blockquote>「我不是要他們交出完美的答案，而是希望他們留下過程的痕跡。」</blockquote></div><div class="q"><h4>教育的勾與叉：從同心圓出發的自我認識</h4><p>他多年反覆練習的，是讓學生用規劃者的角度理解自己住的地方，再一層一層往外擴張。</p><blockquote>「如果你可以講出讓南崁人都驚訝的南崁，那麼你也有可能用同樣的方法理解臺南。」</blockquote></div><div class="q"><h4>規劃教育體系的下一步怎麼走？</h4><p>他把規劃教育的演變比喻成畫畫比賽、算術比賽與演講比賽，並提醒課程不能只會「加東西」。</p><blockquote>「不管畫圖、算數、演講，還是未來可能出現的第四種比賽，最終都要回到人的現場。」</blockquote></div>
+<p class="small">以上引文摘自《土地註腳》第 1 期專訪。</p>
+</div></div>
+</section>
+<section class="sec"><h2>閱讀主題</h2><div class="more"><a href="topic-farmland.html"><b>農地非農用</b><span>第一屆第一期・2022.12–2023.02</span></a><a href="topic-rural.html"><b>鄉村地區整體規劃</b><span>第一屆・第三屆第三期・第四屆第二期</span></a><a href="topic-energy.html"><b>能源發展與轉型</b><span>第二屆第一期・第四屆第一期</span></a><a href="topic-heritage.html"><b>文資保存與舊城再生</b><span>第二屆第二期・2023.12–2024.03</span></a><a href="topic-urban23.html"><b>城鄉發展地區第二類之三</b><span>第二屆第三期・2024.04–2024.06・第四屆延伸</span></a><a href="topic-housing.html"><b>住宅政策</b><span>第三屆第一期・2024.09–2024.11</span></a><a href="topic-renewal.html"><b>都市更新</b><span>第三屆第二期・2024.11–2025.03</span></a><a href="topic-indigenous.html"><b>原住民族土地與空間治理</b><span>第三屆第四期・2025.05–2025.06</span></a></div></section>
+</main>
+</div>
+<footer><div class="wrap"><span>社團法人臺灣城市行聊走讀城鄉學會・<a href="index.html">回首頁</a></span><span>《土地註腳》第 1 期</span></div></footer>
+<script>(function(){var links=[].slice.call(document.querySelectorAll('.side ol a'));if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-30% 0px -60% 0px'});document.querySelectorAll('.sec').forEach(function(s){io.observe(s);});})();</script>
+</body></html>

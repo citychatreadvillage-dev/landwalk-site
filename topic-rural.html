@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>鄉村地區整體規劃｜城市行聊・走讀城鄉</title>
+<meta name="description" content="從農村再生到國土計畫，認識鄉規在做什麼、和現實的落差在哪，再到清水、霧峰、苑裡與新社實地走一趟。">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: 與首頁同一套米白紙底、墨綠標頭與咖啡色底線；左側本頁目錄，右側主題內容，像一本讀書會的主題筆記 */
+
+:root{--paper:#EEEDE5;--paper-2:#E4E2D6;--ink:#24271F;--ink-2:#5B5D50;--rule:#9A6E47;--olive:#ADA987;--sage:#C9C5A8;--forest:#2F3A2B;--on-forest:#EEEDE5;--slate:#3E5566;--pin:#E39A55;--card:#F6F5EF;--line:rgba(36,39,31,.14);
+--serif:"Noto Serif TC","Songti TC","PMingLiU",serif;--sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;color-scheme:light}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:84px}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--rule);outline-offset:3px;border-radius:4px}
+h1,h2,h3,h4{font-family:var(--serif);margin:0;line-height:1.45;text-wrap:balance}p{margin:0}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:20px}
+.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}.brand img{width:42px;height:42px}
+.brand span{font-family:var(--serif);font-weight:600;letter-spacing:.14em;white-space:nowrap}
+.nav{display:flex;gap:6px;flex-wrap:wrap}.nav a{text-decoration:none;font-size:.9rem;padding:6px 10px;border-radius:6px;color:var(--ink-2)}
+.nav a:hover{background:var(--paper-2);color:var(--ink)}
+@media (max-width:560px){.brand span{display:none}.nav a{padding:6px 7px;font-size:.85rem}}
+.head{background:var(--forest);color:var(--on-forest)}
+.head .wrap{padding-block:34px 36px;display:grid;gap:12px}
+.crumb{font-size:.8rem;letter-spacing:.14em;color:var(--sage)}.crumb a{text-decoration:none}.crumb a:hover{text-decoration:underline}
+.head h1{font-size:clamp(1.7rem,4vw,2.6rem);letter-spacing:.14em;font-weight:900}
+.head .sub{font-family:var(--serif);font-size:1.1rem;color:var(--sage);letter-spacing:.06em}
+.head .series{display:inline-block;justify-self:start;font-size:.8rem;letter-spacing:.12em;border:1px solid rgba(238,237,229,.4);border-radius:999px;padding:3px 12px}
+.head .lead{max-width:46em;font-size:.98rem;opacity:.92}
+.hstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:8px;max-width:760px}
+.hstats div{border-top:3px solid var(--pin);padding-top:8px}
+.hstats b{display:block;font-family:var(--serif);font-size:1.6rem;font-weight:900;font-variant-numeric:tabular-nums}
+.hstats span{font-size:.8rem;opacity:.8;line-height:1.5;display:block}
+.layout{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:44px;padding-block:36px 70px}
+.side{position:sticky;top:84px;align-self:start;display:grid;gap:22px}
+.side h2{font-family:var(--sans);font-size:.74rem;letter-spacing:.22em;color:var(--rule);font-weight:700;margin-bottom:6px}
+.side ol,.side ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.side a{display:block;text-decoration:none;font-size:.9rem;padding:4px 0 4px 10px;border-left:3px solid transparent;color:var(--ink-2)}
+.side a:hover{border-left-color:var(--olive);color:var(--ink)}.side a.on{border-left-color:var(--rule);color:var(--ink);font-weight:600}
+main{min-width:0}
+.sec{margin-bottom:54px}
+.sec>h2{display:flex;align-items:baseline;gap:14px;font-size:1.4rem;letter-spacing:.12em;font-weight:900;padding-bottom:10px;border-bottom:6px solid var(--rule);margin-bottom:18px}
+.sec>h2 span{font-family:var(--sans);font-size:.8rem;color:var(--rule);letter-spacing:.1em;font-weight:700}
+.sec>p,.sec p.body{margin-bottom:12px;max-width:44em}
+.h3{font-size:1.12rem;letter-spacing:.08em;margin:28px 0 10px}
+.small{font-size:.84rem;color:var(--ink-2);margin-top:10px}
+.fig{margin:18px 0;background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.fig figcaption,.photos figcaption{font-size:.8rem;color:var(--ink-2);padding:8px 12px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}.two .fig{margin:6px 0}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0}
+.photos figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.photos img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+.facts.f5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.fact{border-top:3px solid var(--rule);padding-top:8px}
+.fact b{display:block;font-family:var(--serif);font-size:1.4rem;font-weight:900;font-variant-numeric:tabular-nums}
+.fact span{font-size:.78rem;color:var(--ink-2);line-height:1.5;display:block}
+.bar{display:flex;height:26px;border-radius:3px;overflow:hidden;margin-top:6px}.bar span{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.8rem;margin-top:8px}
+.flow span{border:1.5px solid var(--ink);padding:3px 8px;border-radius:2px;background:var(--paper)}.flow em{font-style:normal;color:var(--rule)}
+.years{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px;font-size:.95rem}
+.years li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding-bottom:8px;border-bottom:1px dashed var(--line)}
+.years b{font-family:var(--serif);font-variant-numeric:tabular-nums;color:var(--rule)}
+.sys{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.sys>div{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:16px 18px}
+.sys h4{font-size:1rem;letter-spacing:.1em;padding-bottom:8px;border-bottom:2px solid var(--rule);margin-bottom:8px}
+.sys ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:.9rem}
+.sys li{background:var(--paper-2);border-radius:3px;padding:3px 10px}
+.ask{margin-top:16px;background:var(--paper-2);border-left:4px solid var(--rule);padding:14px 18px;border-radius:0 4px 4px 0}
+.ask b{display:block;font-size:.78rem;letter-spacing:.18em;color:var(--rule);margin-bottom:4px}
+.ask p{font-family:var(--serif);font-size:1.02rem}
+.route{list-style:none;margin:14px 0;padding:0;display:grid;gap:0}
+.route li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.94rem}
+.ml{color:inherit;text-decoration:underline;text-decoration-color:var(--sage);text-underline-offset:3px}.ml::after{content:" ↗";font-size:.75em;color:var(--rule)}.ml:hover{color:var(--rule)}
+.route time{font-family:var(--serif);font-weight:700;color:var(--rule);font-variant-numeric:tabular-nums}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:8.5em minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.steps b{font-family:var(--serif);color:var(--rule)}
+.steps p{font-size:.94rem}
+.six{list-style:none;margin:14px 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.six li{background:var(--forest);color:var(--on-forest);border-radius:3px;padding:10px 14px;font-family:var(--serif);font-weight:600;letter-spacing:.06em;font-size:.95rem}
+.flowline{list-style:none;margin:16px 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;counter-reset:f}
+.flowline li{counter-increment:f;border:1.5px solid var(--ink);border-radius:3px;padding:10px 12px 10px;font-size:.9rem;background:var(--card);position:relative}
+.flowline li::before{content:counter(f);display:block;font-family:var(--serif);font-weight:900;color:var(--rule);font-size:1.2rem;line-height:1.2}
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0}
+.cards3.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cards3>div{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--olive);border-radius:4px;padding:16px 18px}
+.cards3 h4{font-size:1rem;letter-spacing:.06em;margin-bottom:6px}.cards3 p{font-size:.9rem;color:var(--ink)}
+.qlist{display:grid;gap:8px;margin:14px 0}
+.qlist p{display:grid;grid-template-columns:2em minmax(0,1fr);gap:6px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:10px 14px;font-size:.93rem}
+.qlist b{font-family:var(--serif);font-size:1.2rem;color:var(--rule);line-height:1.4}
+.vs{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;margin:10px 0 14px}
+.vs div{background:var(--card);border:1.5px solid var(--ink);border-radius:6px;padding:14px;text-align:center;font-family:var(--serif);font-weight:700;letter-spacing:.06em}
+.vs em{font-style:normal;color:var(--rule);font-family:var(--serif)}
+.claims{margin:0;padding-left:1.2em;display:grid;gap:6px;font-size:.95rem}
+.table-wrap{overflow-x:auto}
+.cmp{width:100%;min-width:620px;border-collapse:collapse;font-size:.9rem;background:var(--card)}
+.cmp th,.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.cmp thead th{background:var(--forest);color:var(--on-forest);font-family:var(--serif);letter-spacing:.06em}
+.cmp tbody th{background:var(--paper-2);white-space:nowrap;font-family:var(--serif)}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--sage);margin-left:6px}
+.timeline li{display:grid;grid-template-columns:7em minmax(0,1fr);gap:16px;padding:12px 0 12px 18px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-7px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--rule)}
+.timeline .date{font-family:var(--serif);font-weight:700;font-variant-numeric:tabular-nums;color:var(--rule);font-size:.92rem;padding-top:2px}
+.timeline h3{font-size:1rem;letter-spacing:.04em;margin:4px 0 2px}
+.timeline p{font-size:.88rem;color:var(--ink-2)}
+.kind{display:inline-block;font-size:.72rem;letter-spacing:.12em;padding:1px 8px;border-radius:999px;color:#fff;background:var(--slate)}
+.k-walk{background:#5D7F43}.k-talk{background:#A0523F}.k-ws{background:#C27A26}.k-read{background:#3E6E8C}.k-intro{background:#7B5B8E}.k-forum{background:#2F7F7A}.k-show{background:var(--rule)}.k-org{background:var(--ink-2)}
+.tl-map{display:inline-block;margin-top:6px;font-size:.8rem;border:1px solid var(--rule);color:var(--rule);border-radius:999px;padding:2px 12px;text-decoration:none;background:none}
+.tl-map:hover{background:var(--rule);color:#fff}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.more a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:12px 14px}
+.more a:hover{border-color:var(--rule)}
+.more b{display:block;font-family:var(--serif);letter-spacing:.06em}.more span{font-size:.78rem;color:var(--ink-2)}
+footer{background:var(--forest);color:var(--on-forest)}footer .wrap{padding-block:22px 28px;font-size:.82rem;opacity:.8;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:inherit}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr);gap:18px}.side{position:static}.side .others{display:none}.side ol{display:flex;flex-wrap:wrap;gap:6px}.side ol a{border:1px solid var(--line);border-radius:999px;padding:3px 12px;background:var(--card)}
+ .facts.f5{grid-template-columns:repeat(3,minmax(0,1fr))}.cards3,.sys{grid-template-columns:minmax(0,1fr)}.flowline{grid-template-columns:repeat(2,minmax(0,1fr))}.six{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.two{grid-template-columns:minmax(0,1fr)}.hstats{gap:10px}.hstats b{font-size:1.25rem}.facts,.facts.f5{grid-template-columns:repeat(2,minmax(0,1fr))}.steps li{grid-template-columns:minmax(0,1fr);gap:2px}.timeline li{grid-template-columns:minmax(0,1fr);gap:0}.cards3.c2{grid-template-columns:minmax(0,1fr)}.vs{grid-template-columns:minmax(0,1fr)}.vs em{text-align:center}}
+/* qs: 清水走讀專題 */
+.qs{grid-column:1/-1}
+.qs-head{background:var(--forest);color:var(--on-forest);padding:28px 30px 26px;display:grid;gap:10px}
+.qs-head .when{color:var(--sage)}
+.qs-head h3{color:var(--on-forest);font-size:1.5rem}
+.qs .qs-quote{font-family:var(--serif);color:var(--sage);font-size:1rem}
+.qs-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.qs-links a,.qs-links .tl-map{font:inherit;font-size:.86rem;color:var(--on-forest);border:1px solid rgba(238,237,229,.45);border-radius:999px;padding:5px 14px;text-decoration:none;background:none;margin:0;cursor:pointer}
+.qs-links a:hover,.qs-links .tl-map:hover{background:var(--on-forest);color:var(--forest)}
+.qs .qs-facts{grid-template-columns:repeat(6,minmax(0,1fr))}
+.qs-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;border-bottom:1px solid var(--line)}
+.qs-tab{font:inherit;font-family:var(--serif);font-weight:600;letter-spacing:.12em;background:none;border:0;border-bottom:3px solid transparent;padding:8px 12px;color:var(--ink-2);cursor:pointer;margin-bottom:-1px}
+.qs-tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--rule)}
+.qs-panel{padding-top:6px}
+.qs h4{font-family:var(--serif);font-size:1rem;letter-spacing:.08em;font-weight:700;margin:0}
+.qs-hist,.qs-route{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.qs-hist li{display:grid;grid-template-columns:4.2em minmax(0,1fr);gap:14px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.qs-hist b{font-family:var(--serif);font-size:1.25rem;font-weight:900;color:var(--rule);font-variant-numeric:tabular-nums}
+.qs-hist p,.qs-route p{font-size:.9rem;margin-top:3px}
+.qs-route li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.qs-route time{font-family:var(--serif);font-weight:700;color:var(--rule);font-variant-numeric:tabular-nums;padding-top:1px}
+.qs-route .who{font-size:.82rem;color:var(--ink-2)}
+.qs-route .who::before{content:"與談・";color:var(--rule)}
+.qs .qs-note{font-size:.84rem;color:var(--ink-2);margin-top:10px}
+.qs-charts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 36px;margin-top:8px}
+.qs-charts h4{margin-bottom:10px}
+.qs-row{display:grid;grid-template-columns:4.6em minmax(0,1fr) auto;gap:10px;align-items:center;margin:7px 0;font-size:.86rem}
+.qs-row .lb{font-weight:600;line-height:1.25}.qs-row .lb small{display:block;font-weight:400;font-size:.72rem;color:var(--ink-2)}
+.qs-row .val{font-variant-numeric:tabular-nums;color:var(--ink-2);font-size:.8rem;min-width:4.6em;text-align:right}
+.qs-bar{display:flex;height:22px;background:var(--paper-2);border-radius:2px;overflow:hidden}
+.qs-bar i{display:block;font-style:normal;font-size:.72rem;line-height:22px;padding-left:6px;white-space:nowrap;overflow:hidden}
+.qs-bar .pub{background:var(--slate);color:#fff}.qs-bar .pri{background:var(--sage);color:var(--ink)}
+.qs-bar.one i{background:var(--olive)}
+.qs-row.hl .lb,.qs-row.hl .val{color:var(--rule);font-weight:700}.qs-row.hl .qs-bar.one i{background:var(--rule)}
+.qs .qs-legend{display:flex;gap:14px;font-size:.78rem;color:var(--ink-2);margin-bottom:4px}
+.qs-legend i{display:inline-block;width:10px;height:10px;margin-right:5px;vertical-align:-1px}
+.qs-legend .pub{background:var(--slate)}.qs-legend .pri{background:var(--sage)}
+.qs-food{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 28px;margin-top:12px}
+.qs-food ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px}
+.qs-food li{font-size:.9rem;display:flex;flex-wrap:wrap;gap:0 8px;align-items:baseline}
+.qs-food a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--sage);text-underline-offset:3px}
+.qs-food a:hover{color:var(--rule)}
+.qs-food small{font-size:.75rem;color:var(--ink-2)}
+.qs .qs-src{font-size:.78rem;color:var(--ink-2);border-top:1px solid var(--line);padding-top:10px;margin-top:6px}
+@media (max-width:900px){.qs .qs-facts{grid-template-columns:repeat(3,minmax(0,1fr))}.qs-charts,.qs-food{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){.qs-head{padding:22px 20px}.qs .qs-facts{grid-template-columns:repeat(2,minmax(0,1fr))}.qs-tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.qs-tab{padding:8px 8px;letter-spacing:.04em;white-space:nowrap;flex:none}}
+/* qs:css-end */
+.qs{grid-column:auto;margin-top:6px}.topic{background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;min-width:0}.topic .body{padding:24px 26px 26px;display:grid;gap:12px}.topic h3{font-size:1.35rem;letter-spacing:.1em}.topic .when{font-size:.82rem;color:var(--rule);letter-spacing:.14em;font-weight:700}.topic p{font-size:.95rem}
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="img/logo.png" alt="城市行聊走讀城鄉標誌" width="42" height="42"><span>城市行聊・走讀城鄉</span></a>
+<nav class="nav"><a href="index.html">首頁</a><a href="index.html#topics">閱讀主題</a><a href="index.html#events">歷屆活動</a><a href="journal.html">學會刊物</a><a href="index.html#join">加入我們</a></nav>
+</div></header>
+<div class="head"><div class="wrap">
+<p class="crumb"><a href="index.html#topics">閱讀主題回顧</a> ／ 鄉村地區整體規劃</p>
+<h1>鄉村地區整體規劃</h1>
+<p class="sub">第一次替鄉村做「整體」的規劃</p>
+<span class="series">第一屆・第三屆第三期・第四屆第二期</span>
+<p class="lead">讀書會回頭最多次的題目。非都市土地約占全國國土八成，過去依「現況」編定、缺乏計畫指導，鄉村地區長期公共設施不足、環境品質低落。鄉村地區整體規劃（鄉規）是國土計畫下第一次替鄉村做整體規劃，三屆讀書會分別從制度、實務與在地走讀接近它。</p>
+<div class="hstats"><div><b>3</b><span>屆讀書會以鄉規為主題</span></div><div><b>4</b><span>場相關走讀：清水、霧峰、苑裡、新社</span></div><div><b>8 成</b><span>國土屬於非都市土地</span></div></div>
+</div></div>
+<div class="wrap layout">
+<aside class="side">
+<nav aria-label="本頁目錄"><h2>本頁目錄</h2><ol><li><a href="#why">為什麼鄉村需要被規劃</a></li><li><a href="#what">鄉規在做什麼</a></li><li><a href="#gap">理想與現實的落差</a></li><li><a href="#talks">讀書會怎麼討論</a></li><li><a href="#walks">走進鄉村</a></li><li><a href="#events-list">本主題活動</a></li></ol></nav>
+<nav class="others" aria-label="其他主題"><h2>其他主題</h2><ul><li><a href="topic-farmland.html">農地非農用</a></li><li><a href="topic-energy.html">能源發展與轉型</a></li><li><a href="topic-heritage.html">文資保存與舊城再生</a></li><li><a href="topic-urban23.html">城鄉發展地區第二類之三</a></li><li><a href="topic-housing.html">住宅政策</a></li><li><a href="topic-renewal.html">都市更新</a></li><li><a href="topic-indigenous.html">原住民族土地與空間治理</a></li></ul></nav>
+</aside>
+<main>
+<section class="sec" id="why"><h2>為什麼鄉村需要被規劃</h2>
+   <ol class="steps">
+     <li><b>民國 60 年代前</b><p>由鄉村集居衍伸出都市，尚未全面建立國土管理體系，鄉村以自己的原動力自然發展。</p></li>
+     <li><b>民國 60 年代</b><p>國家發展重點放在都市計畫區；非都市土地屬區域計畫體系，以「現況編定」方式管理，鄉村被歸為非都體系的一環，長期受到忽視。</p></li>
+     <li><b>加入 WTO 後</b><p>《農業發展條例》改採「管地不管人」並放寬農地使用，都市周邊農地成為新興的土地市場。</p></li>
+     <li><b>民國 98–99 年</b><p>農委會研訂《農村再生條例》並經立法院通過，以有秩序、有計畫的方式推動農村再生。</p></li>
+     <li><b>國土計畫時期</b><p>鄉規成為直轄市、縣（市）國土計畫應載明的內容之一。114 年 1 月修正的《國土計畫法》第 8 條，再讓地方得研擬具法律效力的「鄉村地區計畫」。</p></li>
+   </ol>
+   <div class="ask"><b>一個常被誤會的地方</b><p>鄉規本身不是法定計畫，而是縣市國土計畫的一部分；若某些區域未來需要具體管制或發展，才會再擬定有法律效力的「鄉村地區計畫」。</p></div>
+   <h3 class="h3">2023 年的起點：鄉村地區整體規劃，你認識它嗎？</h3>
+   <p>第一屆第三次讀書會從《全國國土計畫》的六大變革講起：加強國土保安、強化地方主導空間計畫、加強農地維護管理、輔導農地違規工廠轉型、推動鄉村地區整體規劃、尊重原民傳統文化，並把鄉規當作這次的討論重點。為什麼需要鄉規？鄉村地區相較都市計畫區有自己的自明性；非都市土地上的村落長期沒有計畫指導；各地需求不同；城鄉資源也需要妥善分配，才能維持鄉村的生活機能。</p>
+   <div class="cards3 c2">
+     <div><h4>臺中的優先規劃地區</h4><p>依內政部的五項原則（發展現況與管制明顯不符、人口具規模但基本生活保障不足、易受災害衝擊的集居地區、特色產業永續需要、其他），加上鄉村區高度發展、鄉村區佔非都比例高、區公所位於非都市土地等條件，臺中市指認大安、外埔、龍井、大雅、和平、新社、大肚、太平、霧峰九區優先辦理。</p></div>
+     <div><h4>現行鄉規可能面臨的問題</h4><p>內容要細緻到什麼程度、各部門層級無法聚焦、部門之間配合度不佳、議題屬於全國性還是地區性、換黨是否就換計畫、土地如何取得與土管如何調整，以及和居民之間的信任。</p></div>
+   </div>
+   <p>當時臺灣還沒有完成、可檢視成果的鄉規案例，讀書會以 108 年度雲林縣國土計畫的鄉村地區整體規劃示範規劃案為例，再分組進行「鄉村放大鏡」，拿新社、大安、霧峰三區練習找課題。</p>
+   <figure class="fig"><img src="img/t/s-tc-priority.jpg" alt="臺中市國土計畫指認的優先辦理鄉村地區整體規劃地區" width="1280" height="720" loading="lazy"><figcaption>臺中市國土計畫指認的優先辦理鄉村地區整體規劃地區</figcaption></figure>
+   <div class="photos"><figure><img src="img/t/rural-read2023.jpg" alt="第一屆讀書會活動" width="859" height="504" loading="lazy"><figcaption>第一屆讀書會活動</figcaption></figure></div>
+   <h3 class="h3">第一屆的兩場講座</h3>
+   <p>2023 年 4 月，高雄大學曾梓峰教授的鄉村地區整體規劃講座，從國內案例談到國際視野下的鄉村地區；6 月，第一屆最後一場講座邀請龍邑工程顧問總監王翠霙，談國土規劃下新時代規劃者的挑戰。</p>
+   <div class="photos"><figure><img src="img/t/talk-tseng.jpg" alt="2023.04.21 曾梓峰教授講座" width="675" height="1200" loading="lazy"><figcaption>2023.04.21 曾梓峰教授講座</figcaption></figure><figure><img src="img/t/talk-tseng-group.jpg" alt="曾梓峰教授講座大合照" width="1200" height="675" loading="lazy"><figcaption>曾梓峰教授講座大合照</figcaption></figure><figure><img src="img/t/talk-wang1.jpg" alt="2023.06.19 王翠霙總監講座" width="1200" height="800" loading="lazy"><figcaption>2023.06.19 王翠霙總監講座</figcaption></figure><figure><img src="img/t/talk-wang2.jpg" alt="王翠霙總監講座：臺中 2050" width="1200" height="800" loading="lazy"><figcaption>王翠霙總監講座：臺中 2050</figcaption></figure></div></section><section class="sec" id="what"><h2>鄉規在做什麼</h2>
+   <p>鄉規以鄉（鎮、市、區）為範圍，盤點在地的生活、生產、生態需求，在縣市國土計畫的成長管理與城鄉發展總量指導下，提出空間發展計畫與成長管理計畫。它想達成六件事：</p>
+   <ul class="six"><li>型塑鄉村生活地景</li><li>提供必要生活空間</li><li>提供必要公共服務</li><li>提出氣候變遷調適策略</li><li>強化在地產業鏈結</li><li>避免重大建設影響衝擊</li></ul>
+   <ol class="flowline"><li>基本資料分析</li><li>課題分析與對策研擬</li><li>研擬空間發展計畫及成長管理計畫</li><li>辦理應辦事項及實施機關</li></ol>
+   <div class="two"><figure class="fig"><img src="img/t/s-rural-goals.jpg" alt="新舊制度比較與鄉規希望達成的目標" width="1280" height="720" loading="lazy"><figcaption>新舊制度比較與鄉規希望達成的目標</figcaption></figure><figure class="fig"><img src="img/t/s-rural-process.jpg" alt="鄉村地區整體規劃的法定辦理程序" width="1280" height="720" loading="lazy"><figcaption>鄉村地區整體規劃的法定辦理程序</figcaption></figure></div>
+   <h3 class="h3">對國土計畫的三個影響</h3>
+   <div class="cards3">
+     <div><h4>調整國土功能分區</h4><p>符合農業發展地區劃設原則、具生態或農業需求，或經評估符合當地容受力與發展需求者，可配合調整分區，例如劃為城鄉發展地區第二類之三。</p></div>
+     <div><h4>自訂土地使用管制</h4><p>依《國土計畫法》第 23 條，縣市可為各鄉鎮訂定因地制宜的土管規則，以特有生態、生活習慣、特色產業、信仰風俗為原則增減容許項目。</p></div>
+     <div><h4>依計畫編定使用地</h4><p>使用地編定屬「計畫性質」，不再按現況編定：先指認預定發展地區的範圍，再依空間發展計畫編定為適當的使用地類別。</p></div>
+   </div>
+   <figure class="fig"><img src="img/t/s-rural-spatial.jpg" alt="空間發展計畫與成長管理計畫的內容" width="1280" height="720" loading="lazy"><figcaption>空間發展計畫與成長管理計畫的內容</figcaption></figure></section><section class="sec" id="gap"><h2>理想與現實的落差</h2>
+   <div class="cards3">
+     <div><h4>部門落差</h4><p>規劃者未必了解鄉村與農地的實際情況，熟悉鄉村的人又未必具備空間規劃專業；鄉規還得仰賴交通、教育、農業等各部門計畫配合執行。</p></div>
+     <div><h4>民眾參與</h4><p>部分工作坊只邀地方代表，未廣泛邀請一般民眾；常被參考的雲林古坑與花蓮光復案例背景差異大，直接套用可能讓參與流於形式。</p></div>
+     <div><h4>執行挑戰</h4><p>基礎資料不易蒐集、圖資尺度不一；違規查處要兼顧公平與民意壓力；也要防止以擴大居住規模充實公設之名，反讓農地流失。</p></div>
+   </div></section><section class="sec" id="talks"><h2>讀書會怎麼討論</h2>
+   <p>2025 年 3 月的讀書會上，兩組同學從不同角度切入：第一組主張有限度開發與彈性管制，以大安鴨農為例，搭配跨年齡層公聽會、納入在地聲音，並指出原漢族群對土地使用觀念的差異，呼籲推動民眾參與式規劃；第二組探討鄉規與國土計畫的矛盾，提出「無為而治」與總量管制並行，透過在地整合與部落會議推動特許使用。</p>
+   <div class="qlist">
+     <p><b>Q</b>另訂土地使用管制規則是解決土地與發展方向不符的工具，面對臺灣長久以來的土地使用模式，它會怎麼運作、可能遇到什麼問題？</p>
+     <p><b>Q</b>鄉規強化民眾參與，參與過程中會出現哪些問題？身為規劃專業的你能提出什麼對策？</p>
+     <p><b>Q</b>面對淨零碳排與氣候變遷，如何用鄉規的手法讓土地被更合理地在地使用？</p>
+     <p><b>Q</b>居民對生活、產業與生態各有期待，你會如何分配「生活、生產、生態」在鄉村地區的比例？</p>
+     <p><b>Q</b>鄉規與鄉村地區計畫完成後，會為鄉村帶來機會還是危機？</p>
+   </div>
+   <h3 class="h3">實務現場</h3>
+   <p>包昇平技師（龍邑工程顧問業務副總）的講座，以苗栗龍岡的山坡地問題、彰化大村的分區矛盾、大里十九甲的道路系統為例，說明如何透過共識建立、座談機制與彈性規劃因應鄉村土地使用的挑戰，也談到壢西坪國保區轉型、農村重劃與鄉規的範圍差異。</p>
+   <p>讀書會也實際動手寫了一份服務建議書：同學模擬一家顧問公司「大鵬工程顧問」，投標「臺中市樂農休憩策略區－大安、外埔鄉村地區整體規劃委託技術服務案」。以大安區為例：各里人口皆負成長，十年社會增加率 −7.49%；從事農牧業者 65 歲以上佔 37.84%，高於全市；以 500 公尺作為長者步行的社福設施服務範圍檢視，頂大安最缺公共設施。空間定位分為海濱遊憩觀光、大安文教樂活、農作優良生產與農產六級加值四區。</p>
+   <div class="two"><figure class="fig"><img src="img/t/s-daan-vision.jpg" alt="大安區空間發展定位及願景（讀書會模擬的「大鵬工程顧問」服務建議書）" width="1280" height="720" loading="lazy"><figcaption>大安區空間發展定位及願景（讀書會模擬的「大鵬工程顧問」服務建議書）</figcaption></figure><figure class="fig"><img src="img/t/s-daan-river.jpg" alt="大安區的龜殼溪、南埔溪、溫寮溪（攝影：陳建華）" width="1280" height="720" loading="lazy"><figcaption>大安區的龜殼溪、南埔溪、溫寮溪（攝影：陳建華）</figcaption></figure></div>
+   <div class="photos"><figure><img src="img/t/rural-ws.jpg" alt="2025.03.26 讀書會《解鎖鄉村地區整體規劃》" width="1100" height="600" loading="lazy"><figcaption>2025.03.26 讀書會《解鎖鄉村地區整體規劃》</figcaption></figure><figure><img src="img/t/rural-talk2.jpg" alt="2025.04.16 包昇平技師講座" width="1100" height="728" loading="lazy"><figcaption>2025.04.16 包昇平技師講座</figcaption></figure><figure><img src="img/t/rural-talk.jpg" alt="講座大合照" width="1100" height="588" loading="lazy"><figcaption>講座大合照</figcaption></figure></div></section><section class="sec" id="walks"><h2>走進鄉村</h2>
+   <h3 class="h3">霧峰：阿罩霧的平原與丘陵</h3>
+   <p>2023 年 5 月走讀前的介紹，從霧峰林家的三個時間點講起：1786 年林爽文事件後林家遷至阿罩霧、1864 年林文察戰死受封太子少保、宅邸成為宮保第，到 1921 年林獻堂創立臺灣文化協會；再把霧峰分成市區、平原與丘陵三種生活圈，看公共設施如何演變。走讀當天的路線：</p>
+   <ol class="route">
+     <li><time>上午</time><span><a class="ml" href="https://maps.app.goo.gl/K5xg4ci2jmSdj5gSA" target="_blank" rel="noopener">霧峰菇類產學館</a></span></li>
+     <li><time>中午</time><span><a class="ml" href="https://share.google/NuX1JL8BeqEfIak9p" target="_blank" rel="noopener">霧峰市場</a>，途經<a class="ml" href="https://maps.app.goo.gl/AxDcNpiFc9YAnJu38" target="_blank" rel="noopener">霧峰林家宮保第園區</a></span></li>
+     <li><time>下午</time><span><a class="ml" href="https://maps.app.goo.gl/pT9agB9YTBP54umV7" target="_blank" rel="noopener">立法院民主時刻館</a>與立法院議政博物館</span></li>
+     <li><time>15:00 後</time><span><a class="ml" href="https://maps.app.goo.gl/dEc949z9Zzu4yyCk7" target="_blank" rel="noopener">惜福養菌場</a></span></li>
+   </ol>
+   <p class="small">宣傳海報上原訂的行程還有霧峰工業區、農業試驗所與光復新村。延伸閱讀：<a class="ml" href="https://daap.ly.gov.tw/tw/daap/32-6641.html" target="_blank" rel="noopener">立法院民主議政園區網站</a></p>
+   <div class="two"><figure class="fig"><img src="img/t/s-wufeng-history.jpg" alt="霧峰重要歷史事件" width="1280" height="720" loading="lazy"><figcaption>霧峰重要歷史事件</figcaption></figure><figure class="fig"><img src="img/t/rural-wufeng.jpg" alt="霧峰走讀" width="859" height="551" loading="lazy"><figcaption>霧峰走讀</figcaption></figure></div>
+   <h3 class="h3">苑裡：藺草、老街與掀海風</h3>
+   <p>經過一個月的工作坊與講座，第三屆走到苗栗苑裡：從苑裡老街出發，在掀海風書店舉辦鄉規工作坊討論地方發展，再由在地工作者在藺草文化館分享藺草產業與文化的連結，也到<a class="ml" href="https://maps.app.goo.gl/QkfPM2NRvPwJBbZM9" target="_blank" rel="noopener">房裡順天宮</a>看房裡古城。</p>
+   <div class="photos"><figure><img src="img/t/rural-yuanli4.jpg" alt="走進苑裡老街" width="1100" height="825" loading="lazy"><figcaption>走進苑裡老街</figcaption></figure><figure><img src="img/t/rural-yuanli3.jpg" alt="掀海風書店的鄉規工作坊" width="1100" height="828" loading="lazy"><figcaption>掀海風書店的鄉規工作坊</figcaption></figure><figure><img src="img/t/rural-yuanli2.jpg" alt="工作坊大合照" width="723" height="614" loading="lazy"><figcaption>工作坊大合照</figcaption></figure><figure><img src="img/t/rural-yuanli.jpg" alt="苑裡走讀大合照" width="882" height="499" loading="lazy"><figcaption>苑裡走讀大合照</figcaption></figure></div>
+   <h3 class="h3">新社：種苗、圳路與社區</h3>
+   <p>第四屆走進臺中新社，看種苗改良場、鎮安宮、馬力埔社區、<a class="ml" href="https://maps.app.goo.gl/JiMC2MJvgcfkkgnMA" target="_blank" rel="noopener">新五村紫明宮</a>與<a class="ml" href="https://maps.app.goo.gl/BQFr8uiEDXyi7oMd7" target="_blank" rel="noopener">白冷圳圓堀</a>，並由臺中市都發局江日順科長分享。</p>
+   <h3 class="h3" id="qingshui">清水：走讀清水 隨身導覽 E 手冊</h3>
+   <div class="photos"><figure><img src="img/t/rural-qingshui.jpg" alt="第二次走讀，清水的稻田邊" width="821" height="524" loading="lazy"><figcaption>第二次走讀，清水的稻田邊</figcaption></figure></div>
+   <!-- qs:start -->
+        <article class="topic qs" id="qingshui-guide">
+          <header class="qs-head">
+            <p class="when">2023.03.18・第一屆走讀・隨身導覽 E 手冊</p>
+            <h3>走讀清水：80 年的邊緣後，清水留下了甚麼？</h3>
+            <p class="qs-quote">唯有放慢速度，才能真正感受這座文化小鎮的魅力與哀愁。</p>
+            <div class="qs-links"><a href="https://landwalk-ctw-qingshui.mystrikingly.com/" target="_blank" rel="noopener">開啟完整 E 手冊 ↗</a><a href="https://www.google.com/maps/d/viewer?mid=1Tv2MSjC5XIXFlWsQXTzKYMiUwKjb4AE" target="_blank" rel="noopener">Google 地圖行程表 ↗</a><a class="tl-map" href="index.html#walk-qingshui">在走讀地圖上看</a></div>
+          </header>
+          <div class="body">
+            <p>清水舊稱牛罵頭，東倚大肚山、西臨臺灣海峽、北隔大甲溪，分為清水、大秀、三田、高美、大楊五大區域，是臺中海線面積最大的行政區。第一屆讀書會讀完「農地非農用」與「鄉村地區整體規劃」後，把問題帶到這裡：1972 年的臺中港特定區計畫把高美、三田劃進都市計畫農業區，五十年來計畫與現實的落差，留下了什麼？我們為這趟走讀做了一本隨身 E 手冊，請大家在每個定點查查自己站在哪個土地使用分區上。</p>
+            <div class="facts qs-facts">
+              <div class="fact"><b>6,417</b><span>全區面積（公頃），32 里</span></div>
+              <div class="fact"><b>8.9 萬</b><span>人口（2022 年底），海線第二</span></div>
+              <div class="fact"><b>2,080</b><span>臺中港特定區清水地區農業區（公頃），74% 為私有地</span></div>
+              <div class="fact"><b>50%</b><span>臺中港特定區人口達成率：計畫 58 萬、現居 27 萬</span></div>
+              <div class="fact"><b>29</b><span>高美五里長期處於限制發展的庄頭</span></div>
+              <div class="fact"><b>90%</b><span>清水韭黃佔臺中市產量</span></div>
+            </div>
+            <div class="qs-tabs" role="tablist" aria-label="清水手冊內容">
+              <button type="button" role="tab" class="qs-tab" aria-selected="true" aria-controls="qs-p1" id="qs-t1">清水邊緣史</button><button type="button" role="tab" class="qs-tab" aria-selected="false" aria-controls="qs-p2" id="qs-t2">走讀行程</button><button type="button" role="tab" class="qs-tab" aria-selected="false" aria-controls="qs-p3" id="qs-t3">探索清水</button><button type="button" role="tab" class="qs-tab" aria-selected="false" aria-controls="qs-p4" id="qs-t4">午餐指南</button>
+            </div>
+          <div class="qs-panel" role="tabpanel" id="qs-p1" aria-labelledby="qs-t1">
+              <ol class="qs-hist"><li><b>1944</b><div><h4>新高市，胎死腹中的工業都市</h4><p>日治末期計畫合併梧棲、清水、沙鹿三街為「新高市」，並在梧棲興建兼具漁港、工業港與商港的新高港。二戰與財政困難讓計畫停擺，1960 年代在聯合國顧問指導下正式取消。</p></div></li><li><b>1950</b><div><h4>臺中縣治的山海之爭</h4><p>行政區調整方案原擬將縣治設於清水，引來豐原陳情反對，兩地鎮長隔空交火，一路延續到第一屆縣長選舉的紅黑派之爭，清水最終落敗。</p></div></li><li><b>1954</b><div><h4>陽明山計畫與大遷村</h4><p>擴建清泉崗機場，徵收大肚台地近 1,400 公頃土地，清水、沙鹿、大雅、神岡部分村落被集體「疏開」到新社與埔里，山上只剩大楊等零星聚落。</p></div></li><li><b>1972</b><div><h4>臺中港特定區計畫</h4><p>為配合臺中港開闢，高美、三田劃入都市計畫農業區。計畫人口 58 萬，2022 年實際約 27 萬；高美五里千餘公頃、至少 29 個庄頭長期處於限制發展（劉曜華，2020）。</p></div></li><li><b>2021</b><div><h4>臺中市國土計畫</h4><p>清水的都市計畫農業區被劃為農業發展地區第五類，聚落發展需求再次被略過。破碎的農五，能讓土地被有效利用，還是只是在等待被蠶食？</p></div></li></ol>
+              <p class="qs-note">交通的軸線也一路改寫清水：1922 海線鐵路通車、1976 臺中港通航、2001 國道四號、2004 國道三號。</p>
+            </div>
+          <div class="qs-panel" role="tabpanel" id="qs-p2" aria-labelledby="qs-t2" hidden>
+              <ol class="qs-route"><li><time>09:30</time><span><div><h4>清水大集合</h4><p>牛罵頭文化園區（牛罵頭遺址停車場）</p></div></span></li><li><time>10:20</time><span><div><h4>清水．起源</h4><p>牛罵頭遺址文化園區 → 清水神社 → 震災紀念碑 → 清水神社後參道</p></div></span></li><li><time>11:15</time><span><div><h4>Walking 走讀小鎮</h4><p>清水自來水廠 → 營盤巷 → 紫雲巖 → 清水李宅 → 新生巷 → 南海岩 → 土角厝 → <a class="ml" href="https://maps.app.goo.gl/Kv7bPoBzK5hJRGdNA" target="_blank" rel="noopener">清水十八崁仔</a></p></div></span></li><li><time>12:00</time><span><div><h4>吃遍清水</h4><p>發放美食地圖，分組打卡</p></div></span></li><li><time>13:45</time><span><div><h4>農工清水</h4><p><a class="ml" href="https://share.google/5GT6sQGuw78ARjoRz" target="_blank" rel="noopener">清水黃家瀞園</a>及周邊地區的農地工廠</p><p class="who">劉曜華</p></div></span></li><li><time>14:20</time><span><div><h4>青創清水．走讀論壇</h4><p><a class="ml" href="https://share.google/zguQq3IjbDcO0Kq66" target="_blank" rel="noopener">來來農場</a>（高東里）・在地青年返鄉論壇</p><p class="who">洪健盛（在地斜槓返鄉青農）、陳信秀（在地青年政治工作者）、陳信名（大手牽小手在地產業種子計畫）</p></div></span></li><li><time>16:20</time><span><div><h4>清水消滅</h4><p><a class="ml" href="https://share.google/XIgtyGdAzn2mRIdRE" target="_blank" rel="noopener">高北里開山宮</a>暨周邊番仔寮建築群</p><p class="who">劉曜華</p></div></span></li><li><time>16:50</time><span><div><h4>Walking 潮埔清水</h4><p>高美濕地木棧道暨高西里聚落（魚寮、海口、下厝），高美聚落的美與哀愁</p><p class="who">楊先驊（臺中海線產業發展的願景與策略白皮書研究員）</p></div></span></li><li><time>17:40</time><span><div><h4>晚霞清水</h4><p>一生必遊一次的高美濕地，除了夕陽還剩下甚麼？</p></div></span></li></ol>
+            </div>
+          <div class="qs-panel" role="tabpanel" id="qs-p3" aria-labelledby="qs-t3" hidden>
+              <div class="qs-charts">
+                <div>
+                  <h4>都市計畫農業區土地公私有比例</h4>
+                  <p class="qs-legend"><span><i class="pub"></i>公有</span><span><i class="pri"></i>私有</span></p>
+                  <div class="qs-row"><span class="lb">高美<small>1,072 公頃</small></span><span class="qs-bar"><i class="pub" style="width:37%">37%</i><i class="pri" style="width:63%">63%</i></span></div><div class="qs-row"><span class="lb">三田<small>884 公頃</small></span><span class="qs-bar"><i class="pub" style="width:11%">11%</i><i class="pri" style="width:89%">89%</i></span></div><div class="qs-row"><span class="lb">大秀<small>124 公頃</small></span><span class="qs-bar"><i class="pub" style="width:37%">37%</i><i class="pri" style="width:63%">63%</i></span></div>
+                  <p class="qs-note">大楊地區另有都市計畫農業區 405 公頃，公私有比例待查。這裡算的是「農業區土地」，不是「耕地」。</p>
+                </div>
+                <div>
+                  <h4>海線各區工業年產值</h4>
+                  <div class="qs-row"><span class="lb">龍井</span><span class="qs-bar one"><i style="width:100.0%"></i></span><span class="val">1,550 億</span></div><div class="qs-row"><span class="lb">梧棲</span><span class="qs-bar one"><i style="width:95.5%"></i></span><span class="val">1,480 億</span></div><div class="qs-row"><span class="lb">大甲</span><span class="qs-bar one"><i style="width:85.2%"></i></span><span class="val">1,320 億</span></div><div class="qs-row"><span class="lb">沙鹿</span><span class="qs-bar one"><i style="width:56.8%"></i></span><span class="val">880 億</span></div><div class="qs-row"><span class="lb">大肚</span><span class="qs-bar one"><i style="width:40.0%"></i></span><span class="val">620 億</span></div><div class="qs-row hl"><span class="lb">清水</span><span class="qs-bar one"><i style="width:39.4%"></i></span><span class="val">610 億</span></div><div class="qs-row"><span class="lb">外埔</span><span class="qs-bar one"><i style="width:16.1%"></i></span><span class="val">250 億</span></div><div class="qs-row"><span class="lb">大安</span><span class="qs-bar one"><i style="width:6.5%"></i></span><span class="val">100 億</span></div>
+                  <p class="qs-note">清水工業區約 40 公頃，工廠集中在南側的下湳里（台一線中山路沿線），共 120 家，其中 47 家為機械設備製造業。</p>
+                </div>
+              </div>
+              <p class="qs-note">農業方面，耕地 2,609 公頃佔全區 40.66%，其中七成以上是水田；稻米佔清水農業產值 75%，亮點作物是韭黃。</p>
+            </div>
+          <div class="qs-panel" role="tabpanel" id="qs-p4" aria-labelledby="qs-t4" hidden>
+              <p class="qs-note" style="margin-top:0">清水街內午餐指南：這裡沒有業配，版面有限，歡迎大家繼續挖掘！店名可直接開 Google 地圖。</p>
+              <div class="qs-food"><div><h4>米糕（勿戰・排序隨機）</h4><ul><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E4%B8%AD%E8%88%88%E8%A1%9730-1%E8%99%9F%20%E7%8E%8B%E5%A1%94%E7%B1%B3%E7%B3%95" target="_blank" rel="noopener">王塔米糕</a><small>中興街30-1號</small></li><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E6%B8%85%E6%B0%B4%E8%A1%9725-3%E8%99%9F%20%E9%98%BF%E5%BF%A0%E7%B1%B3%E7%B3%95%E5%BA%97" target="_blank" rel="noopener">阿忠米糕店</a><small>清水街25-3號</small></li><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E5%A4%A7%E8%A1%97%E8%B7%AF75-1%E8%99%9F%20%E6%AD%A3%E7%89%8C%E7%B1%B3%E7%B3%95%E8%8E%8A" target="_blank" rel="noopener">正牌米糕莊</a><small>大街路75-1號</small></li><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E8%A5%BF%E5%AF%A7%E8%B7%AF105%E8%99%9F%20%E9%98%BF%E8%B2%A1%E7%B1%B3%E7%B3%95%E5%BA%97" target="_blank" rel="noopener">阿財米糕店</a><small>西寧路105號</small></li><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E9%AB%98%E7%BE%8E%E8%B7%AF90%E8%99%9F%20%E9%98%BF%E9%A8%B0%E7%B1%B3%E7%B3%95" target="_blank" rel="noopener">阿騰米糕</a><small>高美路90號</small></li><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E6%96%B0%E8%88%88%E8%B7%AF121-2%E8%99%9F%20%E6%A6%AE%E8%A8%98%E7%B1%B3%E7%B3%95%20%E6%B8%85%E6%B0%B4%E6%9C%AC%E8%88%96" target="_blank" rel="noopener">榮記米糕 清水本舖</a><small>新興路121-2號</small></li></ul></div><div><h4>麵</h4><ul><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E9%B0%B2%E5%B3%B0%E8%B7%AF18%E8%99%9F%20%E6%B8%85%E6%B0%B4%E7%89%9B%E8%82%89%E9%BA%B5" target="_blank" rel="noopener">清水牛肉麵</a><small>鰲峰路18號</small></li><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E9%8E%AE%E5%8D%97%E8%A1%9781%E4%B9%8B12%E8%99%9F%20%E8%80%81%E5%A3%AB%E5%AE%98%E6%93%80%E9%BA%B5%E5%BA%97" target="_blank" rel="noopener">老士官擀麵店</a><small>鎮南街81之12號</small></li><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E6%B8%85%E6%B0%B4%E8%A1%9758%E8%99%9F%20%E9%99%B3%E5%A4%A7%E7%89%8C%E6%8E%92%E9%AA%A8%E9%BA%B5" target="_blank" rel="noopener">陳大牌排骨麵</a><small>清水街58號</small></li></ul></div><div><h4>小吃與甜點</h4><ul><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E5%8C%97%E5%AF%A7%E8%A1%9710%E8%99%9F%20%E9%98%BF%E6%96%87%E8%82%89%E5%9C%93" target="_blank" rel="noopener">阿文肉圓</a><small>北寧街10號</small></li><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E9%B0%B2%E5%B3%B0%E8%B7%AF17%E8%99%9F%20%E6%B3%97%E9%99%BD%E5%A4%A7%E6%B5%AF%E6%B1%9F" target="_blank" rel="noopener">泗陽大浯江</a><small>鰲峰路17號</small></li><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E5%85%89%E8%8F%AF%E8%B7%AF206%E8%99%9F%20%E6%B8%85%E6%B0%B4%E7%87%92%E7%82%B8%E7%B2%BF" target="_blank" rel="noopener">清水燒炸粿</a><small>光華路206號</small></li><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E5%A4%A7%E8%A1%97%E8%B7%AF206%E8%99%9F%20%E6%A8%B9%E4%B8%8B%E9%98%BF%E5%A9%86%E7%B2%89%E5%9C%93" target="_blank" rel="noopener">樹下阿婆粉圓</a><small>大街路206號</small></li><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E4%B8%AD%E5%B1%B1%E8%B7%AF207%E8%99%9F%20%E8%8F%AF%E5%BE%97%E4%BE%86" target="_blank" rel="noopener">華得來</a><small>中山路207號</small></li><li><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%B8%85%E6%B0%B4%E5%8D%80%E4%B8%AD%E8%88%88%E8%A1%9715%E8%99%9F%20%E5%B0%8F%E8%B5%AB%E9%9C%9C%E6%B7%87%E6%B7%8B" target="_blank" rel="noopener">小赫霜淇淋</a><small>中興街15號</small></li></ul></div></div>
+            </div>
+          <p class="qs-src">內容整理自讀書會自製的《走讀清水 隨身導覽 E 手冊》（2023.3.14 上線）。本次走讀由內政部國土人才培育計畫補助。</p>
+          </div>
+        </article>
+        <!-- qs:end --></section>
+<section class="sec" id="events-list"><h2>本主題活動<span>12 場</span></h2><ul class="timeline"><li><p class="date">2023.03.10</p><div><span class="kind k-read">讀書會</span><h3>第三次讀書會：認識鄉村地區整體規劃</h3><p>介紹鄉規與臺中市鄉規優先規劃地區。忠勤樓 405。</p></div></li><li><p class="date">2023.03.18</p><div><span class="kind k-walk">走讀</span><h3>清水走讀</h3><p>牛罵頭、紫雲巖與十八崁仔老街區，下午在來來農場辦《青創清水．走讀論壇》，傍晚走高美聚落與濕地。</p><a class="tl-map" href="index.html#walk-qingshui">在走讀地圖上看 →</a></div></li><li><p class="date">2023.04.21</p><div><span class="kind k-talk">講座</span><h3>鄉村地區整體規劃講座</h3><p>講者：曾梓峰（高雄大學教授）。從國內案例談到國際視野下的鄉村地區。忠勤樓 B08。</p></div></li><li><p class="date">2023.05.05</p><div><span class="kind k-ws">工作坊</span><h3>鄉村地區整規大哉問</h3><p>第四期讀書會，以團體討論與問答整理鄉規的想像。忠勤樓 402。</p></div></li><li><p class="date">2023.05.21</p><div><span class="kind k-walk">走讀</span><h3>霧峰走讀</h3><p>阿罩霧老城區、省議會舊址（立法院民主議政園區）。</p><a class="tl-map" href="index.html#walk-wufeng">在走讀地圖上看 →</a></div></li><li><p class="date">2023.06.19</p><div><span class="kind k-talk">講座</span><h3>國土規劃下新時代規劃者的挑戰</h3><p>講者：王翠霙（龍邑工程顧問總監、台灣省都市計畫技師公會第十屆理事長、內政部國土計畫審議會委員）。</p></div></li><li><p class="date">2025.03.26</p><div><span class="kind k-read">讀書會</span><h3>第三屆第三期讀書會：鄉村地區整體規劃</h3><p>以桌邊討論認識鄉規的緣起與變革。忠勤樓 402。</p></div></li><li><p class="date">2025.04.16</p><div><span class="kind k-talk">講座</span><h3>國土計畫的新篇章：鄉村地區整體規劃實務案例分享</h3><p>講者：包昇平（都市計畫技師，龍邑工程顧問業務副總）。忠勤樓 B08。</p></div></li><li><p class="date">2025.05.25</p><div><span class="kind k-walk">走讀</span><h3>苑裡走讀暨鄉規工作坊</h3><p>苑裡老街、掀海風工作坊、藺草文化館。</p><a class="tl-map" href="index.html#walk-yuanli">在走讀地圖上看 →</a></div></li><li><p class="date">2026.03.16</p><div><span class="kind k-read">讀書會</span><h3>認識鄉村：鄉規的第一步</h3><p>第四屆第二期第一次讀書會。忠勤樓 402。</p></div></li><li><p class="date">2026.03.30</p><div><span class="kind k-talk">講座</span><h3>鄉村不是都市的反面：重新理解鄉村空間</h3><p>講者：蔡岡廷（中興大學景觀與遊憩學位學程教授）。忠勤樓 B01。</p></div></li><li><p class="date">2026.04.26</p><div><span class="kind k-walk">走讀</span><h3>新社走讀</h3><p>種苗改良場、鎮安宮、馬力埔社區、白冷圳，都發局江日順科長分享。</p><a class="tl-map" href="index.html#walk-xinshe">在走讀地圖上看 →</a></div></li></ul></section>
+<section class="sec"><h2>其他閱讀主題</h2><div class="more"><a href="topic-farmland.html"><b>農地非農用</b><span>第一屆第一期・2022.12–2023.02</span></a><a href="topic-energy.html"><b>能源發展與轉型</b><span>第二屆第一期・第四屆第一期</span></a><a href="topic-heritage.html"><b>文資保存與舊城再生</b><span>第二屆第二期・2023.12–2024.03</span></a><a href="topic-urban23.html"><b>城鄉發展地區第二類之三</b><span>第二屆第三期・2024.04–2024.06・第四屆延伸</span></a><a href="topic-housing.html"><b>住宅政策</b><span>第三屆第一期・2024.09–2024.11</span></a><a href="topic-renewal.html"><b>都市更新</b><span>第三屆第二期・2024.11–2025.03</span></a><a href="topic-indigenous.html"><b>原住民族土地與空間治理</b><span>第三屆第四期・2025.05–2025.06</span></a></div></section>
+</main>
+</div>
+<footer><div class="wrap"><span>社團法人臺灣城市行聊走讀城鄉學會・<a href="index.html">回首頁</a>・<a href="journal.html">學會刊物《土地註腳》</a></span><span>內容整理自讀書會各期簡報與成果資料</span></div></footer>
+<script>(function(){var t=document.querySelectorAll('.qs-tab');t.forEach(function(b){b.addEventListener('click',function(){t.forEach(function(x){var on=x===b;x.setAttribute('aria-selected',on);document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});});});})();</script><script>(function(){var links=[].slice.call(document.querySelectorAll('.side ol a'));if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-30% 0px -60% 0px'});document.querySelectorAll('.sec').forEach(function(s){io.observe(s);});})();</script>
+</body></html>

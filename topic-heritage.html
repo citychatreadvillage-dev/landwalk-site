@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>文資保存與舊城再生｜城市行聊・走讀城鄉</title>
+<meta name="description" content="從大里、梧棲老街的分組討論，到臺中中區的《時光裊裊》舊城走讀，再聽范特喜與臺南歷史街區的實務經驗。">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: 與首頁同一套米白紙底、墨綠標頭與咖啡色底線；左側本頁目錄，右側主題內容，像一本讀書會的主題筆記 */
+
+:root{--paper:#EEEDE5;--paper-2:#E4E2D6;--ink:#24271F;--ink-2:#5B5D50;--rule:#9A6E47;--olive:#ADA987;--sage:#C9C5A8;--forest:#2F3A2B;--on-forest:#EEEDE5;--slate:#3E5566;--pin:#E39A55;--card:#F6F5EF;--line:rgba(36,39,31,.14);
+--serif:"Noto Serif TC","Songti TC","PMingLiU",serif;--sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;color-scheme:light}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:84px}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--rule);outline-offset:3px;border-radius:4px}
+h1,h2,h3,h4{font-family:var(--serif);margin:0;line-height:1.45;text-wrap:balance}p{margin:0}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:20px}
+.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}.brand img{width:42px;height:42px}
+.brand span{font-family:var(--serif);font-weight:600;letter-spacing:.14em;white-space:nowrap}
+.nav{display:flex;gap:6px;flex-wrap:wrap}.nav a{text-decoration:none;font-size:.9rem;padding:6px 10px;border-radius:6px;color:var(--ink-2)}
+.nav a:hover{background:var(--paper-2);color:var(--ink)}
+@media (max-width:560px){.brand span{display:none}.nav a{padding:6px 7px;font-size:.85rem}}
+.head{background:var(--forest);color:var(--on-forest)}
+.head .wrap{padding-block:34px 36px;display:grid;gap:12px}
+.crumb{font-size:.8rem;letter-spacing:.14em;color:var(--sage)}.crumb a{text-decoration:none}.crumb a:hover{text-decoration:underline}
+.head h1{font-size:clamp(1.7rem,4vw,2.6rem);letter-spacing:.14em;font-weight:900}
+.head .sub{font-family:var(--serif);font-size:1.1rem;color:var(--sage);letter-spacing:.06em}
+.head .series{display:inline-block;justify-self:start;font-size:.8rem;letter-spacing:.12em;border:1px solid rgba(238,237,229,.4);border-radius:999px;padding:3px 12px}
+.head .lead{max-width:46em;font-size:.98rem;opacity:.92}
+.hstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:8px;max-width:760px}
+.hstats div{border-top:3px solid var(--pin);padding-top:8px}
+.hstats b{display:block;font-family:var(--serif);font-size:1.6rem;font-weight:900;font-variant-numeric:tabular-nums}
+.hstats span{font-size:.8rem;opacity:.8;line-height:1.5;display:block}
+.layout{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:44px;padding-block:36px 70px}
+.side{position:sticky;top:84px;align-self:start;display:grid;gap:22px}
+.side h2{font-family:var(--sans);font-size:.74rem;letter-spacing:.22em;color:var(--rule);font-weight:700;margin-bottom:6px}
+.side ol,.side ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.side a{display:block;text-decoration:none;font-size:.9rem;padding:4px 0 4px 10px;border-left:3px solid transparent;color:var(--ink-2)}
+.side a:hover{border-left-color:var(--olive);color:var(--ink)}.side a.on{border-left-color:var(--rule);color:var(--ink);font-weight:600}
+main{min-width:0}
+.sec{margin-bottom:54px}
+.sec>h2{display:flex;align-items:baseline;gap:14px;font-size:1.4rem;letter-spacing:.12em;font-weight:900;padding-bottom:10px;border-bottom:6px solid var(--rule);margin-bottom:18px}
+.sec>h2 span{font-family:var(--sans);font-size:.8rem;color:var(--rule);letter-spacing:.1em;font-weight:700}
+.sec>p,.sec p.body{margin-bottom:12px;max-width:44em}
+.h3{font-size:1.12rem;letter-spacing:.08em;margin:28px 0 10px}
+.small{font-size:.84rem;color:var(--ink-2);margin-top:10px}
+.fig{margin:18px 0;background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.fig figcaption,.photos figcaption{font-size:.8rem;color:var(--ink-2);padding:8px 12px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}.two .fig{margin:6px 0}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0}
+.photos figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.photos img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+.facts.f5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.fact{border-top:3px solid var(--rule);padding-top:8px}
+.fact b{display:block;font-family:var(--serif);font-size:1.4rem;font-weight:900;font-variant-numeric:tabular-nums}
+.fact span{font-size:.78rem;color:var(--ink-2);line-height:1.5;display:block}
+.bar{display:flex;height:26px;border-radius:3px;overflow:hidden;margin-top:6px}.bar span{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.8rem;margin-top:8px}
+.flow span{border:1.5px solid var(--ink);padding:3px 8px;border-radius:2px;background:var(--paper)}.flow em{font-style:normal;color:var(--rule)}
+.years{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px;font-size:.95rem}
+.years li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding-bottom:8px;border-bottom:1px dashed var(--line)}
+.years b{font-family:var(--serif);font-variant-numeric:tabular-nums;color:var(--rule)}
+.sys{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.sys>div{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:16px 18px}
+.sys h4{font-size:1rem;letter-spacing:.1em;padding-bottom:8px;border-bottom:2px solid var(--rule);margin-bottom:8px}
+.sys ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:.9rem}
+.sys li{background:var(--paper-2);border-radius:3px;padding:3px 10px}
+.ask{margin-top:16px;background:var(--paper-2);border-left:4px solid var(--rule);padding:14px 18px;border-radius:0 4px 4px 0}
+.ask b{display:block;font-size:.78rem;letter-spacing:.18em;color:var(--rule);margin-bottom:4px}
+.ask p{font-family:var(--serif);font-size:1.02rem}
+.route{list-style:none;margin:14px 0;padding:0;display:grid;gap:0}
+.route li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.94rem}
+.ml{color:inherit;text-decoration:underline;text-decoration-color:var(--sage);text-underline-offset:3px}.ml::after{content:" ↗";font-size:.75em;color:var(--rule)}.ml:hover{color:var(--rule)}
+.route time{font-family:var(--serif);font-weight:700;color:var(--rule);font-variant-numeric:tabular-nums}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:8.5em minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.steps b{font-family:var(--serif);color:var(--rule)}
+.steps p{font-size:.94rem}
+.six{list-style:none;margin:14px 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.six li{background:var(--forest);color:var(--on-forest);border-radius:3px;padding:10px 14px;font-family:var(--serif);font-weight:600;letter-spacing:.06em;font-size:.95rem}
+.flowline{list-style:none;margin:16px 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;counter-reset:f}
+.flowline li{counter-increment:f;border:1.5px solid var(--ink);border-radius:3px;padding:10px 12px 10px;font-size:.9rem;background:var(--card);position:relative}
+.flowline li::before{content:counter(f);display:block;font-family:var(--serif);font-weight:900;color:var(--rule);font-size:1.2rem;line-height:1.2}
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0}
+.cards3.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cards3>div{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--olive);border-radius:4px;padding:16px 18px}
+.cards3 h4{font-size:1rem;letter-spacing:.06em;margin-bottom:6px}.cards3 p{font-size:.9rem;color:var(--ink)}
+.qlist{display:grid;gap:8px;margin:14px 0}
+.qlist p{display:grid;grid-template-columns:2em minmax(0,1fr);gap:6px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:10px 14px;font-size:.93rem}
+.qlist b{font-family:var(--serif);font-size:1.2rem;color:var(--rule);line-height:1.4}
+.vs{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;margin:10px 0 14px}
+.vs div{background:var(--card);border:1.5px solid var(--ink);border-radius:6px;padding:14px;text-align:center;font-family:var(--serif);font-weight:700;letter-spacing:.06em}
+.vs em{font-style:normal;color:var(--rule);font-family:var(--serif)}
+.claims{margin:0;padding-left:1.2em;display:grid;gap:6px;font-size:.95rem}
+.table-wrap{overflow-x:auto}
+.cmp{width:100%;min-width:620px;border-collapse:collapse;font-size:.9rem;background:var(--card)}
+.cmp th,.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.cmp thead th{background:var(--forest);color:var(--on-forest);font-family:var(--serif);letter-spacing:.06em}
+.cmp tbody th{background:var(--paper-2);white-space:nowrap;font-family:var(--serif)}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--sage);margin-left:6px}
+.timeline li{display:grid;grid-template-columns:7em minmax(0,1fr);gap:16px;padding:12px 0 12px 18px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-7px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--rule)}
+.timeline .date{font-family:var(--serif);font-weight:700;font-variant-numeric:tabular-nums;color:var(--rule);font-size:.92rem;padding-top:2px}
+.timeline h3{font-size:1rem;letter-spacing:.04em;margin:4px 0 2px}
+.timeline p{font-size:.88rem;color:var(--ink-2)}
+.kind{display:inline-block;font-size:.72rem;letter-spacing:.12em;padding:1px 8px;border-radius:999px;color:#fff;background:var(--slate)}
+.k-walk{background:#5D7F43}.k-talk{background:#A0523F}.k-ws{background:#C27A26}.k-read{background:#3E6E8C}.k-intro{background:#7B5B8E}.k-forum{background:#2F7F7A}.k-show{background:var(--rule)}.k-org{background:var(--ink-2)}
+.tl-map{display:inline-block;margin-top:6px;font-size:.8rem;border:1px solid var(--rule);color:var(--rule);border-radius:999px;padding:2px 12px;text-decoration:none;background:none}
+.tl-map:hover{background:var(--rule);color:#fff}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.more a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:12px 14px}
+.more a:hover{border-color:var(--rule)}
+.more b{display:block;font-family:var(--serif);letter-spacing:.06em}.more span{font-size:.78rem;color:var(--ink-2)}
+footer{background:var(--forest);color:var(--on-forest)}footer .wrap{padding-block:22px 28px;font-size:.82rem;opacity:.8;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:inherit}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr);gap:18px}.side{position:static}.side .others{display:none}.side ol{display:flex;flex-wrap:wrap;gap:6px}.side ol a{border:1px solid var(--line);border-radius:999px;padding:3px 12px;background:var(--card)}
+ .facts.f5{grid-template-columns:repeat(3,minmax(0,1fr))}.cards3,.sys{grid-template-columns:minmax(0,1fr)}.flowline{grid-template-columns:repeat(2,minmax(0,1fr))}.six{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.two{grid-template-columns:minmax(0,1fr)}.hstats{gap:10px}.hstats b{font-size:1.25rem}.facts,.facts.f5{grid-template-columns:repeat(2,minmax(0,1fr))}.steps li{grid-template-columns:minmax(0,1fr);gap:2px}.timeline li{grid-template-columns:minmax(0,1fr);gap:0}.cards3.c2{grid-template-columns:minmax(0,1fr)}.vs{grid-template-columns:minmax(0,1fr)}.vs em{text-align:center}}
+
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="img/logo.png" alt="城市行聊走讀城鄉標誌" width="42" height="42"><span>城市行聊・走讀城鄉</span></a>
+<nav class="nav"><a href="index.html">首頁</a><a href="index.html#topics">閱讀主題</a><a href="index.html#events">歷屆活動</a><a href="journal.html">學會刊物</a><a href="index.html#join">加入我們</a></nav>
+</div></header>
+<div class="head"><div class="wrap">
+<p class="crumb"><a href="index.html#topics">閱讀主題回顧</a> ／ 文資保存與舊城再生</p>
+<h1>文資保存與舊城再生</h1>
+<p class="sub">老城區的下一步</p>
+<span class="series">第二屆第二期・2023.12–2024.03</span>
+<p class="lead">第二屆第二期把目光轉向舊城：文化資產怎麼保存、閒置空間如何再利用、沒落的老街區又能怎麼重新活起來。從工作坊、臺中中區的舊城走讀，到兩場關於閒置空間與歷史街區振興的講座。</p>
+<div class="hstats"><div><b>2.5–3</b><span>中區舊城走讀全程步行（公里）</span></div><div><b>9</b><span>站：從東協廣場到國家漫畫博物館</span></div><div><b>2</b><span>場講座：范特喜與臺南歷史街區</span></div></div>
+</div></div>
+<div class="wrap layout">
+<aside class="side">
+<nav aria-label="本頁目錄"><h2>本頁目錄</h2><ol><li><a href="#ws">工作坊：大里與梧棲老街</a></li><li><a href="#zhongqu">時光裊裊・舊城走讀</a></li><li><a href="#talks">講座</a></li><li><a href="#events-list">本主題活動</a></li></ol></nav>
+<nav class="others" aria-label="其他主題"><h2>其他主題</h2><ul><li><a href="topic-farmland.html">農地非農用</a></li><li><a href="topic-rural.html">鄉村地區整體規劃</a></li><li><a href="topic-energy.html">能源發展與轉型</a></li><li><a href="topic-urban23.html">城鄉發展地區第二類之三</a></li><li><a href="topic-housing.html">住宅政策</a></li><li><a href="topic-renewal.html">都市更新</a></li><li><a href="topic-indigenous.html">原住民族土地與空間治理</a></li></ul></nav>
+</aside>
+<main>
+<section class="sec" id="ws"><h2>工作坊：大里與梧棲老街</h2>
+   <p>文資保存與舊城再生工作坊以大里老街、梧棲老街分組討論，練習從街區的歷史、產業與空間現況，提出保存與活化的構想。</p></section><section class="sec" id="zhongqu"><h2>時光裊裊・舊城走讀</h2>
+   <p>2024 年 2 月，由臺中文史復興組合格魯克帶路走臺中中區，全程步行約 2.5–3 公里，最後在國家漫畫博物館園區玩一場「城市躲貓貓」，一起找出城市裡的街景。</p>
+   <ol class="route">
+     <li><time>12:30</time><span><a class="ml" href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/73" target="_blank" rel="noopener">東協廣場</a>集合</span></li>
+     <li><time>　</time><span><a class="ml" href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/1260" target="_blank" rel="noopener">綠川</a></span></li>
+     <li><time>　</time><span><a class="ml" href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/52" target="_blank" rel="noopener">台中火車站</a></span></li>
+     <li><time>　</time><span><a class="ml" href="https://www.tchac.taichung.gov.tw/historybuilding?uid=34&pid=253" target="_blank" rel="noopener">臺中車站機關車庫遺構</a></span></li>
+     <li><time>　</time><span><a class="ml" href="https://writingtaichung.blogspot.com/2020/02/blog-post_6.html" target="_blank" rel="noopener">文青果／陳文銘故居</a></span></li>
+     <li><time>　</time><span><a class="ml" href="https://www.fusionspace1962.com/" target="_blank" rel="noopener">富興工廠 1962</a></span></li>
+     <li><time>　</time><span><a class="ml" href="https://www.tcohouse.com/post/%E5%8D%9A%E6%84%9B%E6%AA%A2%E9%A9%97%E6%89%80" target="_blank" rel="noopener">博愛檢驗所</a></span></li>
+     <li><time>　</time><span><a class="ml" href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/1519" target="_blank" rel="noopener">綠空鐵道 1908</a></span></li>
+     <li><time>15:00</time><span><a class="ml" href="https://www.facebook.com/NationalComicMuseum/?locale=zh_TW" target="_blank" rel="noopener">國家漫畫博物館園區</a>｜城市躲貓貓（至 17:00），17:00 園區導覽</span></li>
+   </ol>
+   <p><a class="tl-map" href="index.html#walk-zhongqu">中區舊城走讀在地圖上看 →</a></p></section><section class="sec" id="talks"><h2>講座</h2>
+   <div class="cards3 c2">
+     <div><h4>閒置空間與共創聚落生態系</h4><p>潘冠呈（范特喜微創文化總經理），2024.03.14。</p></div>
+     <div><h4>臺南市歷史街區振興計畫經驗分享</h4><p>邱瑩（臺南市歷史街區及歷史老屋振興補助計畫專案經理），2024.03.25。</p></div>
+   </div></section>
+<section class="sec" id="events-list"><h2>本主題活動<span>4 場</span></h2><ul class="timeline"><li><p class="date">2023.12.21</p><div><span class="kind k-ws">工作坊</span><h3>文資保存與舊城再生工作坊</h3><p>以大里老街、梧棲老街分組討論。</p></div></li><li><p class="date">2024.02.28</p><div><span class="kind k-walk">走讀</span><h3>時光裊裊・舊城走讀</h3><p>臺中中區，臺中文史復興組合格魯克帶路。</p><a class="tl-map" href="index.html#walk-zhongqu">在走讀地圖上看 →</a></div></li><li><p class="date">2024.03.14</p><div><span class="kind k-talk">講座</span><h3>閒置空間與共創聚落生態系</h3><p>講者：潘冠呈（范特喜微創文化總經理）。忠勤樓 B05。</p></div></li><li><p class="date">2024.03.25</p><div><span class="kind k-talk">講座</span><h3>臺南市歷史街區振興計畫經驗分享</h3><p>講者：邱瑩（臺南市歷史街區及歷史老屋振興補助計畫專案經理）。忠勤樓 B05。</p></div></li></ul></section>
+<section class="sec"><h2>其他閱讀主題</h2><div class="more"><a href="topic-farmland.html"><b>農地非農用</b><span>第一屆第一期・2022.12–2023.02</span></a><a href="topic-rural.html"><b>鄉村地區整體規劃</b><span>第一屆・第三屆第三期・第四屆第二期</span></a><a href="topic-energy.html"><b>能源發展與轉型</b><span>第二屆第一期・第四屆第一期</span></a><a href="topic-urban23.html"><b>城鄉發展地區第二類之三</b><span>第二屆第三期・2024.04–2024.06・第四屆延伸</span></a><a href="topic-housing.html"><b>住宅政策</b><span>第三屆第一期・2024.09–2024.11</span></a><a href="topic-renewal.html"><b>都市更新</b><span>第三屆第二期・2024.11–2025.03</span></a><a href="topic-indigenous.html"><b>原住民族土地與空間治理</b><span>第三屆第四期・2025.05–2025.06</span></a></div></section>
+</main>
+</div>
+<footer><div class="wrap"><span>社團法人臺灣城市行聊走讀城鄉學會・<a href="index.html">回首頁</a>・<a href="journal.html">學會刊物《土地註腳》</a></span><span>內容整理自讀書會各期簡報與成果資料</span></div></footer>
+<script>(function(){var links=[].slice.call(document.querySelectorAll('.side ol a'));if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-30% 0px -60% 0px'});document.querySelectorAll('.sec').forEach(function(s){io.observe(s);});})();</script>
+</body></html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>住宅政策｜城市行聊・走讀城鄉</title>
+<meta name="description" content="讀近二十年住宅政策的轉折，比較社宅興辦、包租代管與租金補貼，再動手畫一棟理想的合作住宅。">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: 與首頁同一套米白紙底、墨綠標頭與咖啡色底線；左側本頁目錄，右側主題內容，像一本讀書會的主題筆記 */
+
+:root{--paper:#EEEDE5;--paper-2:#E4E2D6;--ink:#24271F;--ink-2:#5B5D50;--rule:#9A6E47;--olive:#ADA987;--sage:#C9C5A8;--forest:#2F3A2B;--on-forest:#EEEDE5;--slate:#3E5566;--pin:#E39A55;--card:#F6F5EF;--line:rgba(36,39,31,.14);
+--serif:"Noto Serif TC","Songti TC","PMingLiU",serif;--sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;color-scheme:light}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:84px}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--rule);outline-offset:3px;border-radius:4px}
+h1,h2,h3,h4{font-family:var(--serif);margin:0;line-height:1.45;text-wrap:balance}p{margin:0}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1120px;margin-inline:auto;padding-inline:20px}
+.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}.brand img{width:42px;height:42px}
+.brand span{font-family:var(--serif);font-weight:600;letter-spacing:.14em;white-space:nowrap}
+.nav{display:flex;gap:6px;flex-wrap:wrap}.nav a{text-decoration:none;font-size:.9rem;padding:6px 10px;border-radius:6px;color:var(--ink-2)}
+.nav a:hover{background:var(--paper-2);color:var(--ink)}
+@media (max-width:560px){.brand span{display:none}.nav a{padding:6px 7px;font-size:.85rem}}
+.head{background:var(--forest);color:var(--on-forest)}
+.head .wrap{padding-block:34px 36px;display:grid;gap:12px}
+.crumb{font-size:.8rem;letter-spacing:.14em;color:var(--sage)}.crumb a{text-decoration:none}.crumb a:hover{text-decoration:underline}
+.head h1{font-size:clamp(1.7rem,4vw,2.6rem);letter-spacing:.14em;font-weight:900}
+.head .sub{font-family:var(--serif);font-size:1.1rem;color:var(--sage);letter-spacing:.06em}
+.head .series{display:inline-block;justify-self:start;font-size:.8rem;letter-spacing:.12em;border:1px solid rgba(238,237,229,.4);border-radius:999px;padding:3px 12px}
+.head .lead{max-width:46em;font-size:.98rem;opacity:.92}
+.hstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:8px;max-width:760px}
+.hstats div{border-top:3px solid var(--pin);padding-top:8px}
+.hstats b{display:block;font-family:var(--serif);font-size:1.6rem;font-weight:900;font-variant-numeric:tabular-nums}
+.hstats span{font-size:.8rem;opacity:.8;line-height:1.5;display:block}
+.layout{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:44px;padding-block:36px 70px}
+.side{position:sticky;top:84px;align-self:start;display:grid;gap:22px}
+.side h2{font-family:var(--sans);font-size:.74rem;letter-spacing:.22em;color:var(--rule);font-weight:700;margin-bottom:6px}
+.side ol,.side ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.side a{display:block;text-decoration:none;font-size:.9rem;padding:4px 0 4px 10px;border-left:3px solid transparent;color:var(--ink-2)}
+.side a:hover{border-left-color:var(--olive);color:var(--ink)}.side a.on{border-left-color:var(--rule);color:var(--ink);font-weight:600}
+main{min-width:0}
+.sec{margin-bottom:54px}
+.sec>h2{display:flex;align-items:baseline;gap:14px;font-size:1.4rem;letter-spacing:.12em;font-weight:900;padding-bottom:10px;border-bottom:6px solid var(--rule);margin-bottom:18px}
+.sec>h2 span{font-family:var(--sans);font-size:.8rem;color:var(--rule);letter-spacing:.1em;font-weight:700}
+.sec>p,.sec p.body{margin-bottom:12px;max-width:44em}
+.h3{font-size:1.12rem;letter-spacing:.08em;margin:28px 0 10px}
+.small{font-size:.84rem;color:var(--ink-2);margin-top:10px}
+.fig{margin:18px 0;background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.fig figcaption,.photos figcaption{font-size:.8rem;color:var(--ink-2);padding:8px 12px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}.two .fig{margin:6px 0}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0}
+.photos figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.photos img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+.facts.f5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.fact{border-top:3px solid var(--rule);padding-top:8px}
+.fact b{display:block;font-family:var(--serif);font-size:1.4rem;font-weight:900;font-variant-numeric:tabular-nums}
+.fact span{font-size:.78rem;color:var(--ink-2);line-height:1.5;display:block}
+.bar{display:flex;height:26px;border-radius:3px;overflow:hidden;margin-top:6px}.bar span{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.8rem;margin-top:8px}
+.flow span{border:1.5px solid var(--ink);padding:3px 8px;border-radius:2px;background:var(--paper)}.flow em{font-style:normal;color:var(--rule)}
+.years{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px;font-size:.95rem}
+.years li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding-bottom:8px;border-bottom:1px dashed var(--line)}
+.years b{font-family:var(--serif);font-variant-numeric:tabular-nums;color:var(--rule)}
+.sys{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.sys>div{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:16px 18px}
+.sys h4{font-size:1rem;letter-spacing:.1em;padding-bottom:8px;border-bottom:2px solid var(--rule);margin-bottom:8px}
+.sys ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:.9rem}
+.sys li{background:var(--paper-2);border-radius:3px;padding:3px 10px}
+.ask{margin-top:16px;background:var(--paper-2);border-left:4px solid var(--rule);padding:14px 18px;border-radius:0 4px 4px 0}
+.ask b{display:block;font-size:.78rem;letter-spacing:.18em;color:var(--rule);margin-bottom:4px}
+.ask p{font-family:var(--serif);font-size:1.02rem}
+.route{list-style:none;margin:14px 0;padding:0;display:grid;gap:0}
+.route li{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.94rem}
+.ml{color:inherit;text-decoration:underline;text-decoration-color:var(--sage);text-underline-offset:3px}.ml::after{content:" ↗";font-size:.75em;color:var(--rule)}.ml:hover{color:var(--rule)}
+.route time{font-family:var(--serif);font-weight:700;color:var(--rule);font-variant-numeric:tabular-nums}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:8.5em minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.steps b{font-family:var(--serif);color:var(--rule)}
+.steps p{font-size:.94rem}
+.six{list-style:none;margin:14px 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.six li{background:var(--forest);color:var(--on-forest);border-radius:3px;padding:10px 14px;font-family:var(--serif);font-weight:600;letter-spacing:.06em;font-size:.95rem}
+.flowline{list-style:none;margin:16px 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;counter-reset:f}
+.flowline li{counter-increment:f;border:1.5px solid var(--ink);border-radius:3px;padding:10px 12px 10px;font-size:.9rem;background:var(--card);position:relative}
+.flowline li::before{content:counter(f);display:block;font-family:var(--serif);font-weight:900;color:var(--rule);font-size:1.2rem;line-height:1.2}
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0}
+.cards3.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cards3>div{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--olive);border-radius:4px;padding:16px 18px}
+.cards3 h4{font-size:1rem;letter-spacing:.06em;margin-bottom:6px}.cards3 p{font-size:.9rem;color:var(--ink)}
+.qlist{display:grid;gap:8px;margin:14px 0}
+.qlist p{display:grid;grid-template-columns:2em minmax(0,1fr);gap:6px;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:10px 14px;font-size:.93rem}
+.qlist b{font-family:var(--serif);font-size:1.2rem;color:var(--rule);line-height:1.4}
+.vs{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;margin:10px 0 14px}
+.vs div{background:var(--card);border:1.5px solid var(--ink);border-radius:6px;padding:14px;text-align:center;font-family:var(--serif);font-weight:700;letter-spacing:.06em}
+.vs em{font-style:normal;color:var(--rule);font-family:var(--serif)}
+.claims{margin:0;padding-left:1.2em;display:grid;gap:6px;font-size:.95rem}
+.table-wrap{overflow-x:auto}
+.cmp{width:100%;min-width:620px;border-collapse:collapse;font-size:.9rem;background:var(--card)}
+.cmp th,.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.cmp thead th{background:var(--forest);color:var(--on-forest);font-family:var(--serif);letter-spacing:.06em}
+.cmp tbody th{background:var(--paper-2);white-space:nowrap;font-family:var(--serif)}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--sage);margin-left:6px}
+.timeline li{display:grid;grid-template-columns:7em minmax(0,1fr);gap:16px;padding:12px 0 12px 18px;position:relative}
+.timeline li::before{content:"";position:absolute;left:-7px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--rule)}
+.timeline .date{font-family:var(--serif);font-weight:700;font-variant-numeric:tabular-nums;color:var(--rule);font-size:.92rem;padding-top:2px}
+.timeline h3{font-size:1rem;letter-spacing:.04em;margin:4px 0 2px}
+.timeline p{font-size:.88rem;color:var(--ink-2)}
+.kind{display:inline-block;font-size:.72rem;letter-spacing:.12em;padding:1px 8px;border-radius:999px;color:#fff;background:var(--slate)}
+.k-walk{background:#5D7F43}.k-talk{background:#A0523F}.k-ws{background:#C27A26}.k-read{background:#3E6E8C}.k-intro{background:#7B5B8E}.k-forum{background:#2F7F7A}.k-show{background:var(--rule)}.k-org{background:var(--ink-2)}
+.tl-map{display:inline-block;margin-top:6px;font-size:.8rem;border:1px solid var(--rule);color:var(--rule);border-radius:999px;padding:2px 12px;text-decoration:none;background:none}
+.tl-map:hover{background:var(--rule);color:#fff}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.more a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:12px 14px}
+.more a:hover{border-color:var(--rule)}
+.more b{display:block;font-family:var(--serif);letter-spacing:.06em}.more span{font-size:.78rem;color:var(--ink-2)}
+footer{background:var(--forest);color:var(--on-forest)}footer .wrap{padding-block:22px 28px;font-size:.82rem;opacity:.8;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:inherit}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr);gap:18px}.side{position:static}.side .others{display:none}.side ol{display:flex;flex-wrap:wrap;gap:6px}.side ol a{border:1px solid var(--line);border-radius:999px;padding:3px 12px;background:var(--card)}
+ .facts.f5{grid-template-columns:repeat(3,minmax(0,1fr))}.cards3,.sys{grid-template-columns:minmax(0,1fr)}.flowline{grid-template-columns:repeat(2,minmax(0,1fr))}.six{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.two{grid-template-columns:minmax(0,1fr)}.hstats{gap:10px}.hstats b{font-size:1.25rem}.facts,.facts.f5{grid-template-columns:repeat(2,minmax(0,1fr))}.steps li{grid-template-columns:minmax(0,1fr);gap:2px}.timeline li{grid-template-columns:minmax(0,1fr);gap:0}.cards3.c2{grid-template-columns:minmax(0,1fr)}.vs{grid-template-columns:minmax(0,1fr)}.vs em{text-align:center}}
+
+</style></head><body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="img/logo.png" alt="城市行聊走讀城鄉標誌" width="42" height="42"><span>城市行聊・走讀城鄉</span></a>
+<nav class="nav"><a href="index.html">首頁</a><a href="index.html#topics">閱讀主題</a><a href="index.html#events">歷屆活動</a><a href="journal.html">學會刊物</a><a href="index.html#join">加入我們</a></nav>
+</div></header>
+<div class="head"><div class="wrap">
+<p class="crumb"><a href="index.html#topics">閱讀主題回顧</a> ／ 住宅政策</p>
+<h1>住宅政策</h1>
+<p class="sub">從國宅到社會住宅</p>
+<span class="series">第三屆第一期・2024.09–2024.11</span>
+<p class="lead">以生活作為關心城市發展的起點。住宅是每個人都碰得到的空間議題，第三屆從近二十年住宅政策的轉折讀起，到合作住宅工作坊與社會住宅參訪，帶大家從生活大小事關心都市的發展。</p>
+<div class="hstats"><div><b>7</b><span>場活動，從說明會到社宅參訪</span></div><div><b>1989</b><span>無殼蝸牛運動</span></div><div><b>2012</b><span>《住宅法》施行</span></div></div>
+</div></div>
+<div class="wrap layout">
+<aside class="side">
+<nav aria-label="本頁目錄"><h2>本頁目錄</h2><ol><li><a href="#policy">近二十年住宅政策重大變革</a></li><li><a href="#read">讀書會：從社會住宅到合作住宅</a></li><li><a href="#compare">三條路線的優缺點</a></li><li><a href="#activities">從讀書會到社宅現場</a></li><li><a href="#events-list">本主題活動</a></li></ol></nav>
+<nav class="others" aria-label="其他主題"><h2>其他主題</h2><ul><li><a href="topic-farmland.html">農地非農用</a></li><li><a href="topic-rural.html">鄉村地區整體規劃</a></li><li><a href="topic-energy.html">能源發展與轉型</a></li><li><a href="topic-heritage.html">文資保存與舊城再生</a></li><li><a href="topic-urban23.html">城鄉發展地區第二類之三</a></li><li><a href="topic-renewal.html">都市更新</a></li><li><a href="topic-indigenous.html">原住民族土地與空間治理</a></li></ul></nav>
+</aside>
+<main>
+<section class="sec" id="policy"><h2>近二十年住宅政策重大變革</h2>
+   <ul class="years">
+              <li><b>1989</b><span>無殼蝸牛運動，掀起國宅興建熱潮</span></li>
+              <li><b>1999</b><span>停止興建國民住宅；2000 年停止獎勵民間興建</span></li>
+              <li><b>2005</b><span>《整體住宅政策》首次明確提出社會住宅</span></li>
+              <li><b>2007</b><span>整合住宅補貼資源實施方案，推出租金補貼</span></li>
+              <li><b>2012</b><span>《住宅法》施行，廢止國民住宅條例</span></li>
+              <li><b>2015</b><span>《整體住宅政策》修正，提出無障礙、弱勢協助與公平租購目標</span></li>
+            </ul>
+   <p>1976 年起為期 14 年的「國宅計畫」大量推動國宅興建，但資金運用與土地取得困難，國宅興建緩慢、與市場供需脫節、價格又比同等級住宅昂貴，1990 年代大量滯銷。社會抗議政府濫用資源，政府於 1999 年底停止興辦國民住宅。2012 年《住宅法》將社會住宅定義為「由政府興辦或獎勵民間興辦，專供出租之用」，並應提供至少 10% 給具特殊情形或身分者。</p>
+   <div class="photos"><figure><img src="img/shezhai.jpg" alt="臺中市共好社會住宅" width="1200" height="800" loading="lazy"><figcaption>臺中市共好社會住宅</figcaption></figure><figure><img src="img/guozhai.jpg" alt="國民住宅社區" width="1200" height="800" loading="lazy"><figcaption>國民住宅社區</figcaption></figure></div></section><section class="sec" id="read"><h2>讀書會：從社會住宅到合作住宅</h2>
+   <p>第三屆第一期讀書會先把住宅政策的概念攤開：可負擔住房、居住權、住房供應、社會包容、租賃市場穩定與社區參與；再把住宅模式分成政府主導（社會住宅、公共租賃住房、共有產權住房、包租代管、都更住宅）與民間主導（合作住宅、自助建房、微型住宅、社區土地信託、住商混合）兩類。</p>
+   <div class="cards3 c2">
+     <div><h4>社會住宅</h4><p>制度源自 19 世紀末歐陸的公共衛生危機，二戰後進入大量興建高峰，90 年代起轉型調整。被稱為「社會住宅世界首都」的維也納，社宅比例高達 45%，102 萬戶住宅中有一半的市民住在市府出租或公私合營的社宅。臺灣推動社宅則面臨土地供應不足、財政壓力，以及租期限制帶來的居住不穩定。</p></div>
+     <div><h4>合作住宅</h4><p>一群理念相同的人共同創建、管理居住的房屋與社區：透過購買合作社股份取得居住使用權、重要決策由住戶投票、共同分擔管理與維護成本。案例包括瑞士蘇黎世 Kraftwerk1、日本茨城的龍崎長者村，以及新北市的「員和共居」。在臺灣則受限於認知不足、法規不明確，以及偏好個人擁有產權的居住文化。</p></div>
+   </div>
+   <div class="ask"><b>分組討論</b><p>站在負責推動社宅政策的政府部門，或是社區居民與合作住宅倡導者的角色：如何改善社會住宅實行上的問題？又該如何推行臺灣的合作住宅政策？</p></div></section><section class="sec" id="compare"><h2>三條路線的優缺點</h2>
+   <div class="table-wrap"><table class="cmp">
+     <thead><tr><th></th><th>社會住宅興辦計畫</th><th>包租代管計畫</th><th>租金補貼措施</th></tr></thead>
+     <tbody>
+      <tr><th>優點</th><td>以市場租金六成至八成五出租；至少 40% 出租給經濟或社會弱勢；導入綠建築、太陽能光電、智慧建築與無障礙設計</td><td>以租屋市場制衡房價過度上漲；房東可減輕綜合所得稅、房屋稅與地價稅</td><td>每人每月補貼 2,000 至 8,000 元；「租金補貼 2.0」申請年齡由 20 歲下修至 18 歲</td></tr>
+      <tr><th>缺點</th><td>供應明顯不足；長期經營管理經費須納入考量；真正的經濟弱勢仍可能照顧不到</td><td>成本是租金補貼的兩倍以上；制度不完善，沒有規定房東資訊透明</td><td>「申請補貼不需房東同意」，房東可能變相向房客漲租</td></tr>
+     </tbody>
+   </table></div></section><section class="sec" id="activities"><h2>從讀書會到社宅現場</h2>
+   <p><b>合作住宅工作坊</b>從真實案例出發，剖析合作住宅的政策背景、運作機制與管理模式。各組從單層平面、一棟建築到整體社區，運用永續發展、樂齡友善、綠建築與共享空間的概念，畫出理想中的合作住宅。</p>
+   <p><b>《無住之島》講座</b>邀請 OURs 都市改革組織研究員、《無住之島》作者廖庭輝，由逢甲大學土地管理學系<a class="ml" href="https://lm.fcu.edu.tw/teachers-detail/?id=T00027&unit_id=CM03" target="_blank" rel="noopener">張育端助理教授</a>引言。廖庭輝長期研究住宅與都市改革運動，推動《住宅法》與「實價登錄 2.0」的修法倡議，從住宅政策的發展背景談到居住正義。OURs 針對整體住宅政策提出五個初步方案：緊縮房產投資金流、釋出空屋提供租住、去黑市保障租屋權益、降低租屋負擔、承諾社宅繼續興辦，並在 2023 年與其他民間組織成立租客聯盟。</p>
+   <p><b>董建宏次長講座</b>由劉曜華老師先分享臺灣社會住宅推動的實際狀況，董次長再從住宅的定義與價值談起，剖析住宅政策與國土計畫的關聯，探討社會住宅在國土規劃中的實踐，聚焦如何透過土地規劃實現居住公平。</p>
+   <p><b>社會住宅參訪</b>由劉曜華老師帶隊到臺中東區「協園社會住宅」，臺中市住宅發展工程處處長親自主講，從政策制定、土地整合到建築設計，說明社會住宅的發展歷程與制度運作。室內參觀時，同學針對社宅租金機制、弱勢族群保障熱烈提問；室外導覽則看社宅的區位，以及它如何串聯周邊公共設施與大眾運輸。</p>
+   <div class="photos"><figure><img src="img/t/house-ws.jpg" alt="合作住宅工作坊的成果發表" width="824" height="618" loading="lazy"><figcaption>合作住宅工作坊的成果發表</figcaption></figure><figure><img src="img/t/house-talk.jpg" alt="董建宏次長講座" width="1100" height="603" loading="lazy"><figcaption>董建宏次長講座</figcaption></figure><figure><img src="img/t/house-visit3.jpg" alt="協園社會住宅：住宅發展工程處處長簡報" width="1100" height="825" loading="lazy"><figcaption>協園社會住宅：住宅發展工程處處長簡報</figcaption></figure><figure><img src="img/t/house-visit2.jpg" alt="協園社會住宅：室外導覽" width="1100" height="825" loading="lazy"><figcaption>協園社會住宅：室外導覽</figcaption></figure><figure><img src="img/t/house-visit.jpg" alt="協園社會住宅參訪大合照" width="853" height="677" loading="lazy"><figcaption>協園社會住宅參訪大合照</figcaption></figure></div>
+   <p class="small">延伸閱讀：學會刊物《土地註腳》的每月議題〈共融．共榮：社會住宅與原社區的相互包容〉與〈住商混合〉。<a href="journal.html#issues">到刊物頁閱讀摘要 →</a></p></section>
+<section class="sec" id="events-list"><h2>本主題活動<span>7 場</span></h2><ul class="timeline"><li><p class="date">2024.09.20</p><div><span class="kind k-intro">說明會</span><h3>第三屆讀書說明會</h3><p>議題簡介：近二十年住宅政策。忠勤樓 405。</p></div></li><li><p class="date">2024.09.27</p><div><span class="kind k-read">讀書會</span><h3>第三屆第一期讀書會：住宅政策</h3><p>國內合作住宅與社會住宅的現況與問題。忠勤樓 405。</p></div></li><li><p class="date">2024.10.20</p><div><span class="kind k-walk">走讀</span><h3>梧棲走讀</h3><p>鄉村地區之住宅與聚落，海口腔 Hi culture 導覽。</p><a class="tl-map" href="index.html#walk-wuqi">在走讀地圖上看 →</a></div></li><li><p class="date">2024.10.25</p><div><span class="kind k-talk">講座</span><h3>無住之島：居住困境與改革實踐</h3><p>講者：廖庭輝（OURs 都市改革組織研究員）。忠勤樓 B05。</p></div></li><li><p class="date">2024.11.15</p><div><span class="kind k-ws">工作坊</span><h3>住宅政策工作坊：合作住宅</h3><p>從真實案例出發，分組手繪合作住宅設計。忠勤樓 402。</p></div></li><li><p class="date">2024.11.22</p><div><span class="kind k-talk">講座</span><h3>國土規劃下住宅政策的未來與挑戰</h3><p>講者：董建宏（內政部政務次長）。忠勤樓 B08。</p></div></li><li><p class="date">2024.11.27</p><div><span class="kind k-walk">走讀</span><h3>社會住宅空間探索</h3><p>劉曜華老師帶隊參訪臺中東區「協園社會住宅」，由住宅發展工程處處長從政策、土地整合講到建築設計。</p></div></li></ul></section>
+<section class="sec"><h2>其他閱讀主題</h2><div class="more"><a href="topic-farmland.html"><b>農地非農用</b><span>第一屆第一期・2022.12–2023.02</span></a><a href="topic-rural.html"><b>鄉村地區整體規劃</b><span>第一屆・第三屆第三期・第四屆第二期</span></a><a href="topic-energy.html"><b>能源發展與轉型</b><span>第二屆第一期・第四屆第一期</span></a><a href="topic-heritage.html"><b>文資保存與舊城再生</b><span>第二屆第二期・2023.12–2024.03</span></a><a href="topic-urban23.html"><b>城鄉發展地區第二類之三</b><span>第二屆第三期・2024.04–2024.06・第四屆延伸</span></a><a href="topic-renewal.html"><b>都市更新</b><span>第三屆第二期・2024.11–2025.03</span></a><a href="topic-indigenous.html"><b>原住民族土地與空間治理</b><span>第三屆第四期・2025.05–2025.06</span></a></div></section>
+</main>
+</div>
+<footer><div class="wrap"><span>社團法人臺灣城市行聊走讀城鄉學會・<a href="index.html">回首頁</a>・<a href="journal.html">學會刊物《土地註腳》</a></span><span>內容整理自讀書會各期簡報與成果資料</span></div></footer>
+<script>(function(){var links=[].slice.call(document.querySelectorAll('.side ol a'));if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-30% 0px -60% 0px'});document.querySelectorAll('.sec').forEach(function(s){io.observe(s);});})();</script>
+</body></html>
